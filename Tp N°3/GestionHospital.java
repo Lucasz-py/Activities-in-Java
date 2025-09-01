@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class GestionHospital here.
+ * Class ejecutable GestionHospital.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (01/09/2025)
  */
 import java.util.Scanner;
 

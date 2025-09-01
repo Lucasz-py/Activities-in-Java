@@ -3,7 +3,7 @@ import java.util.*;
  * Class Persona.
  * 
  * @authors (Gabriel F. - Lucas E.)
- * @version (13/08/2025)
+ * @version (01/09/2025)
  */
 
 public class Persona

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Empleado
-comment0.text=\r\n\ Class\ Empleado.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\ \r\n\ @version\ (13/08/2025)\r\n
+comment0.text=\r\n\ Class\ Empleado.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
 comment1.params=p_cuil\ p_apellido\ p_nombre\ p_importe\ p_fecha
 comment1.target=Empleado(long,\ java.lang.String,\ java.lang.String,\ double,\ java.util.Calendar)
 comment1.text=\r\n\ Constructor\ de\ empleado.\r\n\ @Param\ p_cuil\ asigna\ el\ cuil\ del\ empleado\r\n\ @param\ p_apellido\ asigna\ apellido\ al\ empleado\r\n\ @param\ p_nombre\ asigna\ nombre\ al\ empleado\r\n\ @param\ p_importe\ asigna\ importe\ del\ empleado\r\n\ @param\ p_anio\ asigna\ a\u00F1o\ de\ ingreso\ del\ empleado\r\n

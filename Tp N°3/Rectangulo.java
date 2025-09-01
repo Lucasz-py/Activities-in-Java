@@ -1,21 +1,30 @@
 
 /**
- * Write a description of class Rectangulos here.
+ * Class Rectangulo.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (01/09/2025)
  */
 public class Rectangulo{
     private Punto origen;
     private double ancho;
     private double alto;
-    
+    /**
+     * Constructor de Rectangulo
+     * @param p_origen asigna un objeto del la clase Punto.
+     * @param p_ancho asigna el ancho del rectangulo.
+     * @param p_alto asigna el alto del rectangulo.
+     */
     public Rectangulo(Punto p_origen, double p_ancho, double p_alto){
         this.setOrigen(p_origen);
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
-    
+     /**
+     * Constructor de Rectangulo
+     * @param p_ancho asigna el ancho del rectangulo.
+     * @param p_alto asigna el alto del rectangulo.
+     */
     public Rectangulo(double p_ancho, double p_alto){
         this.setOrigen(new Punto(0, 0));
         this.setAncho(p_ancho);

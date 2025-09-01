@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Circulo here.
+ * Class Circulo.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (01/09/2025)
  */
 public class Circulo{
     private double radio;

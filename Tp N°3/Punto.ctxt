@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Punto
-comment0.text=\r\n\ Class\ punto\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\ \r\n\ @version\ (14/08/2025)\r\n
+comment0.text=\r\n\ Class\ Punto.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
 comment1.params=p_x\ p_y
 comment1.target=Punto(double,\ double)
 comment1.text=\r\n\ Constructor\ de\ Punto\r\n\ @param\ p_x\ asigna\ un\ valor\ al\ punto\ x.\r\n\ @param\ p_y\ asigna\ un\ valor\ al\ punto\ y\r\n

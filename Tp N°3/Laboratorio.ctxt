@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=Laboratorio
-comment0.text=\r\n\ Clase\ Laboratorio.\r\n\ \r\n\ @Lucas\ Escobar\ \r\n\ @2025\r\n
+comment0.text=\r\n\ Class\ Laboratorio.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
 comment1.params=p_nombre\ p_domicilio\ p_telefono\ p_compraMin\ p_diaEnt
 comment1.target=Laboratorio(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Metodo\ Constructor\ de\ Laboratorio.\r\n\ @param\ p_nombre\ asigna\ el\ nombre\ al\ laboratorio.\r\n\ @param\ p_domicilio\ asigna\ el\ domicilio\ del\ laboratorio.\r\n\ @param\ p_telefono\ asigna\ un\ telefono\ al\ laboratorio.\r\n\ @param\ p_compraMin\ asigna\ una\ compra\ minima.\r\n\ @param\ p_diaEnt\ asigna\ un\ dia\ de\ entrega.\r\n
 comment10.params=
 comment10.target=java.lang.String\ getTelefono()
 comment11.params=
@@ -11,12 +12,16 @@ comment12.params=
 comment12.target=int\ getDiaEnt()
 comment13.params=p_compraMin
 comment13.target=void\ nuevaCompraMinima(int)
+comment13.text=\r\n\ M\u00E9todo\ nuevoCompraMin\r\n\ Permite\ asignar\ una\ nuevo\ valor\ a\ la\ compra\ minima.\r\n
 comment14.params=p_diaEnt
 comment14.target=void\ nuevoDiaEntrega(int)
+comment14.text=\r\n\ M\u00E9todo\ nuevoDiaEntrega\r\n\ Permite\ asignar\ una\ nuevo\ valor\ al\ atributo\ diaEntrega.\r\n
 comment15.params=
 comment15.target=java.lang.String\ mostrar()
+comment15.text=\r\n\ M\u00E9todo\ mostrar\r\n\ retorna\ un\ string\ con\ el\ nombre,\ domicilio\ y\ telefono\ del\ laboratorio.\r\n
 comment2.params=p_nombre\ p_domicilio\ p_telefono
 comment2.target=Laboratorio(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Metodo\ Constructor\ de\ Laboratorio.\r\n\ @param\ p_nombre\ asigna\ el\ nombre\ al\ laboratorio.\r\n\ @param\ p_domicilio\ asigna\ el\ domicilio\ del\ laboratorio.\r\n\ @param\ p_telefono\ asigna\ un\ telefono\ al\ laboratorio.\r\n
 comment3.params=p_nombre
 comment3.target=void\ setNombre(java.lang.String)
 comment4.params=p_domicilio

@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class CuentaCorriente here.
+ * Class CuentaCorriente.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (01/09/2025)
  */
 public class CuentaCorriente{
     private int nroCuenta;

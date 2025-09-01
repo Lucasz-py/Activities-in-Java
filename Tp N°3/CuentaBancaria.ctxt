@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CuentaBancaria
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CuentaBancaria\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ CuentaBancaria.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
 comment1.params=p_nroCuenta\ p_titular
 comment1.target=CuentaBancaria(int,\ Persona)
 comment10.params=p_importe

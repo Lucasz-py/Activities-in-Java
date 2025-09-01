@@ -114,7 +114,7 @@ public class Cliente
     public String apeYNom(){
         return this.getApellido() + " " + this.getNombre();
     }
-        /**
+    /**
     * Método mostrar
     * muestra en pantalla el cliente, nombre y apellido, saldo.
     */

@@ -2,8 +2,8 @@ import java.util.*;
 /**
  * Class Empleado.
  * 
- * @authors (Gabriel F. - Lucas E.) 
- * @version (13/08/2025)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (01/09/2025)
  */
 public class Empleado
 {   

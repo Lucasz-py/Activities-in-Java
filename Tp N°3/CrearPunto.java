@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class CrearPunto here.
+ * Clase ejeutable para crear un punto.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (01/09/2025)
  */
 public class CrearPunto{
     public static void main(String[] args){

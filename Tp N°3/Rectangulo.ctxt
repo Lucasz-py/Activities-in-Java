@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=Rectangulo
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Rectangulos\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ Rectangulo.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
 comment1.params=p_origen\ p_ancho\ p_alto
 comment1.target=Rectangulo(Punto,\ double,\ double)
+comment1.text=\r\n\ Constructor\ de\ Rectangulo\r\n\ @param\ p_origen\ asigna\ un\ objeto\ del\ la\ clase\ Punto.\r\n\ @param\ p_ancho\ asigna\ el\ ancho\ del\ rectangulo.\r\n\ @param\ p_alto\ asigna\ el\ alto\ del\ rectangulo.\r\n
 comment10.params=
 comment10.target=double\ perimetro()
 comment11.params=
@@ -15,6 +16,7 @@ comment14.params=otroRectangulo
 comment14.target=Rectangulo\ elMayor(Rectangulo)
 comment2.params=p_ancho\ p_alto
 comment2.target=Rectangulo(double,\ double)
+comment2.text=\r\n\ Constructor\ de\ Rectangulo\r\n\ @param\ p_ancho\ asigna\ el\ ancho\ del\ rectangulo.\r\n\ @param\ p_alto\ asigna\ el\ alto\ del\ rectangulo.\r\n
 comment3.params=p_origen
 comment3.target=void\ setOrigen(Punto)
 comment4.params=p_ancho
