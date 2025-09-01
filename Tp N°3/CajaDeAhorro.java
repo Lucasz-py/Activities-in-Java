@@ -79,8 +79,8 @@ public class CajaDeAhorro{
     }
     
     public void mostrar(){
-        System.out.println("-   Cuenta de Ahorro   -");
-        System.out.println("Nro. Cuenta: " + this.getNroCuenta() + " - " + "Saldo: " + this.getSaldo());
+        System.out.println("\n"+"-   Caja de Ahorro   -");
+        System.out.println("Nro. Cuenta: " + this.getNroCuenta() + " - " + "Saldo: $" + this.getSaldo());
         System.out.println("Titular: " + titular.nomYApe());
         System.out.println("Extracciones posibles: " + this.getExtraccionesPosibles());
     }

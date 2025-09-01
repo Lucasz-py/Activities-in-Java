@@ -109,7 +109,7 @@ public class Persona
     }
     /**
     * Método edad
-    * retorna el cálculo de la edad de años de servicio.
+    * retorna el cálculo de la edad segun su fecha de nacimiento.
     */
     public int edad(){
         Calendar hoy = new GregorianCalendar();

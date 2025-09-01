@@ -76,9 +76,9 @@ public class CuentaCorriente{
     }
     
     public void mostrar(){
-        System.out.println("-   Cuenta Corriente   -");
-        System.out.println("Nro. Cuenta: " + this.getNroCuenta() + " - " + "Saldo: " + this.getSaldo());
+        System.out.println("\n"+"-   Cuenta Corriente   -");
+        System.out.println("Nro. Cuenta: " + this.getNroCuenta() + " - " + "Saldo: $" + this.getSaldo());
         System.out.println("Titular: " + titular.nomYApe());
-        System.out.println("Descubierto: " + this.getLimiteDescubierto());
+        System.out.println("Descubierto: $" + this.getLimiteDescubierto());
     }
 }
