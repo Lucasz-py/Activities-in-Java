@@ -71,7 +71,7 @@ public class CajaDeAhorro{
     }
     
     private boolean puedeExtraer(double p_importe){
-        if (this.getSaldo() >= p_importe){
+        if ((this.getSaldo() >= p_importe) && (this.getExtraccionesPosibles() <= 0)){
             return true;
         } else {
             return false;

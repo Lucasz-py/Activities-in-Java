@@ -13,11 +13,15 @@ public class CrearPunto{
         Punto nuevoPunto = new Punto(x, y);
         puntoOrigen.mostrar();
         nuevoPunto.mostrar();
+        nuevoPunto.desplazar(-10, 10);
+        nuevoPunto.mostrar();
         
         double x2 = Double.parseDouble(args[2]);
         double y2 = Double.parseDouble(args[3]);
         Punto nuevoPunto2 = new Punto(x2, y2);
         nuevoPunto2.mostrar();
         System.out.println(nuevoPunto.distanciaA(nuevoPunto2));
+        
+        nuevoPunto2.distanciaA(nuevoPunto);
     }
 }
