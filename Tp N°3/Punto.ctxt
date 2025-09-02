@@ -27,6 +27,7 @@ comment7.target=void\ desplazar(double,\ double)
 comment7.text=\r\n\ El\ m\u00E9todo\ desplaza\ los\ puntos\ x\ y\ d.\r\n
 comment8.params=p_ptoDistante
 comment8.target=double\ distanciaA(Punto)
+comment8.text=\r\n\ El\ m\u00E9todo\ distanciaA.\r\n\ Devuelve\ la\ distancia\ entre\ dos\ puntos.\r\n
 comment9.params=
 comment9.target=void\ mostrar()
 comment9.text=\r\n\ el\ m\u00E9todo\ muestra\ en\ pantalla\ los\ puntos.\r\n

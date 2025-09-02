@@ -50,15 +50,15 @@ public class Punto
      * El método que cambia en 0 los puntos x e y.
      */
     public Punto(){
-        this.x = 0.0;
-        this.y = 0.0;
+        this.setX(0.0);
+        this.setX(0.0);
     }
     /**
      * El método desplaza los puntos x y d.
      */
     public void desplazar(double p_dx, double p_dy){
-        this.x = this.x + p_dx;
-        this.y = this.y + p_dy;
+        this.setX(this.getX() + p_dx);
+        this.setY(this.getY() + p_dy);
     }
     /**
      * el método muestra en pantalla los puntos.

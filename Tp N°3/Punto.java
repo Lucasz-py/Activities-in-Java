@@ -49,17 +49,20 @@ public class Punto
      * El método que cambia en 0 los puntos x e y.
      */
     public Punto(){
-        this.x = 0.0;
-        this.y = 0.0;
+        this.setX(0.0);
+        this.setY(0.0);
     }
     /**
      * El método desplaza los puntos x y d.
      */
     public void desplazar(double p_dx, double p_dy){
-        this.x = this.x + p_dx;
-        this.y = this.y + p_dy;
+        this.setX(this.getX() + p_dx);
+        this.setY(this.getY() + p_dy);
     }
-    
+    /**
+     * El método distanciaA.
+     * Devuelve la distancia entre dos puntos.
+     */
     public double distanciaA(Punto p_ptoDistante){
         double dx = getX() - p_ptoDistante.getX();
         double dy = getY() - p_ptoDistante.getY();
