@@ -105,7 +105,7 @@ public class Persona
     * retorna el año de nacimiento
     */
     public int getAnioNacimiento(){
-        return this.anioNacimiento;
+        return (this.getFechaNacimiento()).get(Calendar.YEAR);
     }
     /**
     * Método edad
@@ -134,7 +134,7 @@ public class Persona
     public boolean esCumpleanios(){
         Calendar hoy = new GregorianCalendar();
         
-        int mesHoy = hoy.get(Calendar.MONTH);
+        int mesHoy = hoy.get(Calendar.MONTH) + 1;
         int diaHoy = hoy.get(Calendar.DAY_OF_MONTH);
         int mesNac = this.getFechaNacimiento().get(Calendar.MONTH);
         int diaNac = this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH);
