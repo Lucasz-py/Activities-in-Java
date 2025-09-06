@@ -12,6 +12,9 @@ public class Paciente{
     private Localidad localidadNacido;
     private Localidad localidadVive;
     
+    /**
+     * Consturctor 
+     */
     Paciente(int p_historia, String p_nombre, String p_domicilio, Localidad p_localidadNacido, Localidad p_localidadVive){
         this.setHistoria(p_historia);
         this.setNombre(p_nombre);

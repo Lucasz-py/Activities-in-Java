@@ -15,11 +15,11 @@ public class Empleado
     private Calendar fechaIngreso;
     /**
      * Constructor de empleado.
-     * @Param p_cuil asigna el cuil del empleado
-     * @param p_apellido asigna apellido al empleado
-     * @param p_nombre asigna nombre al empleado
-     * @param p_importe asigna importe del empleado
-     * @param p_anio asigna año de ingreso del empleado
+     * @Param p_cuil asigna el cuil del empleado.
+     * @param p_apellido asigna apellido al empleado.
+     * @param p_nombre asigna nombre al empleado.
+     * @param p_importe asigna importe del empleado.
+     * @param p_fecha asigna fecha de ingreso.
      */
     public Empleado(long p_cuil, String p_apellido, String p_nombre, double p_importe, Calendar p_fecha){
         this.setCuil(p_cuil);
@@ -28,7 +28,14 @@ public class Empleado
         this.setSueldoBasico(p_importe);
         this.setFechaIngreso(p_fecha);
     }
-    
+    /**
+     * Constructor de empleado.
+     * @Param p_cuil asigna el cuil del empleado.
+     * @param p_apellido asigna apellido al empleado.
+     * @param p_nombre asigna nombre al empleado.
+     * @param p_importe asigna importe del empleado.
+     * @param p_anio asigna año de ingreso del empleado.
+     */
     public Empleado(long p_cuil, String p_apellido, String p_nombre, double p_importe, int p_anio){
         this.setCuil(p_cuil);
         this.setApellido(p_apellido);
@@ -36,17 +43,15 @@ public class Empleado
         this.setSueldoBasico(p_importe);
     }
     /**
-     * Método SetCuil
-     * @param p_cuil
-     * actualiza cuil a p_cuil.
+     * Actualiza el cuil.
+     * @param p_cuil asigna cuil.
      */
     private void setCuil(long p_cuil){
         this.cuil = p_cuil;
     }
     /**
-     * Método SetApellido.
-     * @param p_apellido.
-     * actualiza cuil a p_apellido.
+     * Actualiza el apellido.
+     * @param p_apellido asigna apellido.
      */
     private void setApellido(String p_apellido){
         this.apellido = p_apellido;
@@ -60,24 +65,22 @@ public class Empleado
         this.nombre = p_nombre;
     }
     /**
-     * Método setSueldoBasico.
-     * @param p_sueldoBasico.
-     * actualiza sueldoBasico a p_sueldoBasico.
+     * Actualiza el sueldo básico.
+     * @param p_sueldoBasico asigna el sueldo básico.
      */
     private void setSueldoBasico(double p_sueldoBasico){
         this.sueldoBasico = p_sueldoBasico;
     }
     /**
-     * Método SetAnioIngreso.
-     * @param p_anioIngreso.
-     * actualiza anioIngreso a p_anioIngreso.
+     * Actualiza el año de ingreso.
+     * @param p_anioIngreso asigna el año de ingreso.
      */
     private void setFechaIngreso(Calendar p_fechaIngreso){
         this.fechaIngreso = p_fechaIngreso;
     }
     /**
-     * Método getCuil.
-     * retorna el cuil del Empleado.
+     * Devuelve el cuil del empleado
+     * @return cuil.
      */
     public long getCuil(){
         return this.cuil;
@@ -90,30 +93,28 @@ public class Empleado
         return this.apellido;
     }
     /**
-     * Método getNombre.
-     * retorna el nombre del empleado.
-       */
+     * Devuelve el nombre del empleado.
+     * @return nombre.
+    */
     public String getNombre(){
         return this.nombre;
     }
     /**
-     * Método getSueldoBasico.
-     * retorna el sueldo basico del empleado.
+     * Devuelve el sueldo básico del empleado.
+     * @return sueldoBasico.
      */
     public double getSueldoBasico(){
         return this.sueldoBasico;
     }
     /**
-     * Método SetApellido.
-     * @param p_apellido.
-     * actualiza cuil a p_apellido.
+     * Devuelve la fecha de ingreso
+     * @return fechaIngreso
      */
     public Calendar getFechaIngreso(){
         return this.fechaIngreso;
     }
     /**
-     * Método antiguedad.
-     * calcula la antiguedad del empleado.
+     * Calcula la antiguedad del empleado.
      */
     public int antiguedad(){
         Calendar fechaHoy = new GregorianCalendar();
@@ -134,15 +135,14 @@ public class Empleado
         return antiguedad;
     }
     /**
-     * Método descuento.
-     * realiza el descuento por seguro de vida al empleado.
+     * Realiza el descuento por seguro de vida al empleado.
+     * @return la suma entre el sueldo basico por el descuento de obra social y el seguro de vida.
      */
     private double descuento(){
         return (this.sueldoBasico * 0.02) + 1500;
     }
     /**
-     * Método adicional.
-     * calcula el adicional dependiendo de la antiguedad del empleado en la organización.
+     * Calcula el adicional dependiendo de la antiguedad del empleado en la organización.
      */
     private double adicional(){
         if(antiguedad() >= 0 && antiguedad() < 2){
@@ -154,31 +154,28 @@ public class Empleado
         }
     }
     /**
-     * Método sueldoNeto.
-     * muestra el sueldo neto del empleado.
+     * Devuelve el sueldo neto
+     * @return la - entre el sueldo básico y el descuento + el adicional.
      */
     public double sueldoNeto(){
         return sueldoBasico - descuento() + adicional(); 
     }
     /**
-     * Método SetApellido.
-     * @param p_apellido.
-     * actualiza cuil a p_apellido.
+     * Devuelve una cadena con el nombre y apellido.
+     * @return nombre y apellido.
      */
     public String nomYApe(){
         return this.getNombre() + " " + this.getApellido();
     }
     /**
-     * Método SetApellido
-     * @param p_apellido
-     * actualiza cuil a p_apellido
+     * Devuelve una cadena con el apellido y nombre.
+     * @return apellido y nombre.
      */
     public String apeYNom(){
         return this.getApellido() + " " + this.getNombre();
     }
     /**
-     * Método mostrar
-     * muestra en pantalla el nombre y apellido, cuil y sueldo neto del empleado.
+     * Muestra en pantalla el nombre y apellido, cuil y sueldo neto del empleado.
      */
     public void mostrar(){
         System.out.println("Nombre y Apellido: " + nomYApe());
@@ -186,15 +183,15 @@ public class Empleado
         System.out.println("Sueldo Neto: " + "$" + sueldoNeto());
     }
     /**
-     * Método mostrarLinea
-     * muestra en pantalla como una cadena de caracteres el cuil, apellido y nombre del empleado
+     * Muestra en pantalla como una cadena de caracteres el cuil, apellido y nombre del empleado.
+     * @return cuil, apellido, nombre y sueldo neto.
      */
     public String mostrarLinea(){
         return this.getCuil() + "\t" + this.getApellido() + "," + this.getNombre() + "\t" + "..............." + "$ " + this.sueldoNeto();
     }
     /**
-     * Método esAniversario
-     * devuelve true si es el aniversario del empleado en la empresa
+     * Evalúa si es el aniversario del empleado en la empresa.
+     * @return true si es el aniversario del empleado en la empresa.
      */
     public boolean esAniversario(){
         Calendar hoy = new GregorianCalendar();

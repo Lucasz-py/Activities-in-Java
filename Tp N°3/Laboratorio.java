@@ -39,55 +39,93 @@ public class Laboratorio{
         this.setCompraMin(0);
         this.setDiaEntrega(0);
     }
-    
+    /**
+     * Actualiza el nombre del laboratorio.
+     * @param p_nombre asigna el nombre del laboratorio.
+     */
     private void setNombre(String p_nombre){
         this.nombre = p_nombre;
     }
+    /**
+     * Actualiza el domicilio del laboratorio.
+     * @param p_domicilio asigna el domicilio del laboratorio.
+     */
     private void setDomicilio(String p_domicilio){
         this.domicilio = p_domicilio;
     }
+    /**
+     * Actualiza el valor de diaEntrega al de p_DiaEntrega.
+     * @param p_diaEnt asigna el día de entrega.
+     */
     private void setTelefono(String p_telefono){
         this.telefono = p_telefono;
     }
+    /**
+     * Actualiza el valor de diaEntrega al de p_DiaEntrega.
+     * @param p_diaEnt asigna el día de entrega.
+     */
     private void setCompraMin(int p_compraMin){
         this.compraMinima = p_compraMin;
     }
+    /**
+     * Actualiza el valor de diaEntrega al de p_DiaEntrega.
+     * @param p_diaEnt asigna el día de entrega.
+     */
     private void setDiaEntrega(int p_diaEnt){
         this.diaEntrega = p_diaEnt;
     }
-    
+    /**
+     * Devuelve el nombre del laboratorio.
+     * @return nombre.
+     */
     public String getNombre(){
         return nombre;
     }
+    /**
+     * Devuelve el número de teléfono.
+     * @return telefono.
+     */
     public String getDomicilio(){
         return domicilio;
     }
+    /**
+     * Devuelve el número de teléfono.
+     * @return telefono.
+     */
     public String getTelefono(){
         return telefono;
-    }    
+    }
+    /**
+     * Devuelve la compra Mínima.
+     * @return compraMinima.
+     */
     public int getCompraMin(){
         return compraMinima;
     }
+    /**
+     * Devuelve el día entrega.
+     * @return diaEntrega.
+     */
     public int getDiaEnt(){
         return diaEntrega;
     }
     /**
-    * Método nuevoCompraMin
-    * Permite asignar una nuevo valor a la compra minima.
+    * Asigna un nuevo valor (cuando el usuario quiera) a la compra mínima.
+    * @param p_compraMin asigna la nueva compra mínima.
     */    
     public void nuevaCompraMinima(int p_compraMin){
         this.setCompraMin(p_compraMin);
     }
     /**
-    * Método nuevoDiaEntrega
-    * Permite asignar una nuevo valor al atributo diaEntrega.
+    * Asigna nuevo valor (cuando quiera el usuario) al día de entrega
+    * @param p_diaEnt asigna el nuevo día de entrega.
     */ 
     public void nuevoDiaEntrega(int p_diaEnt){
         this.setDiaEntrega(p_diaEnt);
     }
     /**
-    * Método mostrar
-    * retorna un string con el nombre, domicilio y telefono del laboratorio.
+    * Muestra el nombre, domicilio y telefono del laboratorio en pantalla.
+    * @return  un string con el nombre, domicilio y telefono del laboratorio.
     */     
     public String mostrar() {
         return "Laboratorio: " + this.getNombre() + "\n" +

@@ -1,11 +1,10 @@
-
+import java.util.Scanner;
 /**
  * Class ejecutable Secretaria.
  * 
  * @authors (Gabriel F. - Lucas E.)
  * @version (01/09/2025)
  */
-import java.util.Scanner;
 
 public class Secretaria{
     public static void main(String[] args){

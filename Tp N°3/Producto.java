@@ -51,102 +51,161 @@ public class Producto{
         this.setExistMinima(0);
         this.setStock(0);
     }
-    
+    /**
+    * Actualiza el valor de código.
+    * @param p_cantidad obtiene el valor del código.
+    */
     private void setCodigo(int p_codigo){
         this.codigo = p_codigo;
     }
+    /**
+    * Actualiza el nombre del rubro.
+    * @param p_rubro obtiene el nombre del rubro.
+    */
     private void setRubro(String p_rubro){
         this.rubro = p_rubro;
     }
+    /**
+    * Actualiza la descripción del producto.
+    * @param p_desc obtiene la descripción.
+    */
     private void setDesc(String p_desc){
         this.descripcion = p_desc;
     }
+    /**
+    * Actualiza el valor de costo.
+    * @param p_costo obtiene el precio del producto.
+    */
     private void setCosto(double p_costo){
         this.costo = p_costo;
     } 
+    /**
+    * Actualiza el valor de código.
+    * @param p_stock obtiene la cantidad de stock.
+    */
     private void setStock(int p_stock){
         this.stock = p_stock;
     }
+    /**
+    * Actualiza el valor del porcentaje de punto de reposición.
+    * @param p_porcPtoRepo obtiene el porcentaje de punto de reposición.
+    */
     private void setPorcPtoRepo(double p_porcPtoRepo){
         this.porcPtoRepo = p_porcPtoRepo;
     } 
+    /**
+    * Método setExistMinima - actualiza el valor de la existencia mínima.
+    * @param p_existMinima obtiene la existencia mínima.
+    */
     private void setExistMinima(int p_existMinima){
         this.existMinima = p_existMinima;
     }
+    /**
+    * Actualiza los atributos de Laboratorio.
+    * @param p_lab obtiene el objeto Laboratorio.
+    */
     private void setLab(Laboratorio p_lab){
         this.lab = p_lab;
     }
-    
+    /**
+    * Retorna el código de producto.
+    * @return codigo.
+    */
     public int getCodigo(){
         return codigo;
     }
+    /**
+    * Retorna el nombre del rubro.
+    * @return rubro.
+    */
     public String getRubro(){
         return rubro;
     }
+    /**
+    * Retorna la descripción de producto.
+    * @return descripcion.
+    */
     public String getDesc(){
         return descripcion;
     }
+    /**
+    * Retorna el costo del producto.
+    * @return costo.
+    */
     public double getCosto(){
         return costo;
     } 
+    /**
+    * Retorna el stock.
+    * @return stock.
+    */
     public int getStock(){
         return stock;
     }
+    /**
+    * Retorna el código de producto.
+    * @return codigo.
+    */
     public double getPorcPtoRepo(){
         return porcPtoRepo;
     } 
+    /**
+    * Retorna la existencia minima.
+    * @return existMinima.
+    */
     public int getExistMinima(){
         return existMinima;
     }
+   /**
+    * Retorna el objeto Laboratorio.
+    * @return lab.
+    */
     public Laboratorio getLab(){
         return lab;
     }
+    
     /**
-    * Método ajuste
-    * Permite modificar el valor de stock.
+    * Método ajuste - Permite modificar el valor de stock.
+    * @param p_cantidad permite modificar el stock.
     */
     public void ajuste(int p_cantidad){
         this.setStock(this.getStock() + p_cantidad);
     }
     /**
-    * Método precioLista
-    * Devuelve el valor que resulta de sumar un 12% al costo del producto.
+    * Calcula el precio de Lista.
+    * @return Devuelve el valor que resulta de sumar un 12% al costo del producto.
     */
     public double precioLista(){
         return this.getCosto() * 1.12;
     }
     /**
-    * Método precioContado
-    * Devuelve el valor que resulta de restar un 5% al precioLista del producto.
+    * Devuelve el precio contado.
+    * @return la resta entre el precio de lista y la multiplicación entre la lista y un 0.05.
     */
     public double precioContado(){
         return this.precioLista() - (this.precioLista() * 0.05);
     }
     /**
-    * Método stockValorizado
     * Devuelve el valor que resulta de multiplicar el stock por el precio de costo mas un 12%.
+    * @return la multiplicación del costo y stock por 1.12 (que es el valor del costo multiplicado por el mismo).
     */
     public double stockValorizado(){
         return (this.getStock() * this.getCosto()) * 1.12;
     }
     /**
-    * Método ajustarPtoRepo
     * Permite asignar un nuevo valor a el atributo porcPtoRepo.
     */
     public void ajustarPtoRepo(double p_porce){
         this.setPorcPtoRepo(p_porce);
     }
     /**
-    * Método ajustarExistMin
     * Permite asignar un nuevo valor a el atributo existMinima.
     */
     public void ajustarExistMin(int p_cantidad){
         this.setExistMinima(p_cantidad);
     }
     /**
-    * Método mostrar
-    * Muestra en pantalla el nombre y domicilio del objeto de la clase Laboratorio.
-    * Muestra en pantalla el rubro, descripcion, precio de costo, stock y stock valorizado del producto.
+    * Muestra nombre, domicilio, rubro, descripcion, precio de costo, stock y stock valorizado del producto en pantalla.
     */
     public void mostrar(){
         System.out.println("Laboratorio: " + this.getLab().getNombre());
@@ -158,8 +217,8 @@ public class Producto{
         System.out.println("Stock: " + this.getStock() + " - " + "Stock Valorizado: " + this.stockValorizado() + "\n");
     }
     /**
-    * Método mostrarLinea
-    * Devuelve un string con el nombre, el precio de lista y el precio contado del producto.
+    * Muestra un string con el nombre, el precio de lista y el precio contado del producto.
+    * @return devuelve un string con el nombre, el precio de lista y el precio contado del producto.
     */    
     public String mostrarLinea(){
         return this.getDesc() + "\t" + this.precioLista() + " " + this.precioContado() + "\n"; 
