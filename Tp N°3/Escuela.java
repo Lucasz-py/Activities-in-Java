@@ -11,7 +11,7 @@ public class Escuela{
     private String director;
     
     /**
-     * Constructor de clase de objeto Escuela.
+     * ★ Constructor de objeto de clase Escuela.
      * @param p_nombre asigna el nombre.
      * @param p_domicilio asigna el domicilio.
      * @param p_director asigna el nombre del director.

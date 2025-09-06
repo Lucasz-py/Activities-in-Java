@@ -10,7 +10,7 @@ public class Rectangulo{
     private double alto;
     
     /**
-     * Constructor de Rectangulo
+     * ★ Constructor de objeto de clase Rectangulo
      * @param p_origen asigna un objeto del la clase Punto.
      * @param p_ancho asigna el ancho del rectangulo.
      * @param p_alto asigna el alto del rectangulo.
@@ -21,7 +21,7 @@ public class Rectangulo{
         this.setAlto(p_alto);
     }
     /**
-     * Constructor de Rectangulo con los origenes iniciados en 0.
+     * ★ Constructor de objeto de clase Rectangulo con los origenes iniciados en 0.
      * @param p_ancho asigna el ancho del rectangulo.
      * @param p_alto asigna el alto del rectangulo.
      */

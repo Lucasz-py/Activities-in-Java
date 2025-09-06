@@ -9,7 +9,7 @@ public class Circulo{
     private Punto centro;
     
     /**
-    * Constructor de Circulo
+    * ★ Constructor de Objeto de clase Circulo
     * @param p_radio asigna el valor del radio.
     * @param p_centro asigna el obejo de clase Punto.
     */
@@ -18,7 +18,7 @@ public class Circulo{
         this.setCentro(p_centro);
     }
     /**
-     * Constructor de Circulo sin parametros.
+     * ★ Constructor de Circulo sin parametros.
      */
     public Circulo(){
         this.setRadio(0);
@@ -26,14 +26,14 @@ public class Circulo{
     }
     /**
     * Actualiza el radio.
-    * @param p_radio.
+    * @param p_radio asigna el radio.
     */
     private void setRadio(double p_radio){
         this.radio = p_radio;
     }
     /**
      * Actualiza el centro.
-     * @param p_centro.
+     * @param p_centro asigna el centro.
      */
     private void setCentro(Punto p_centro){
         this.centro  = p_centro;

@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=RegistroCivil
+comment0.text=\r\n\ Class\ ejecutable\ RegistroCivil.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

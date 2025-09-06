@@ -14,7 +14,7 @@ public class Empleado
     private double sueldoBasico;
     private Calendar fechaIngreso;
     /**
-     * Constructor de empleado.
+     * ★ Constructor de objeto de clase Empleado.
      * @Param p_cuil asigna el cuil del empleado.
      * @param p_apellido asigna apellido al empleado.
      * @param p_nombre asigna nombre al empleado.
@@ -29,7 +29,7 @@ public class Empleado
         this.setFechaIngreso(p_fecha);
     }
     /**
-     * Constructor de empleado.
+     * ★ Constructor de objeto de clase Empleado.
      * @Param p_cuil asigna el cuil del empleado.
      * @param p_apellido asigna apellido al empleado.
      * @param p_nombre asigna nombre al empleado.
@@ -118,7 +118,7 @@ public class Empleado
      */
     public int antiguedad(){
         Calendar fechaHoy = new GregorianCalendar();
-        int anioHoy = fechaHoy.get(Calendar.YEAR);
+        /*int anioHoy = fechaHoy.get(Calendar.YEAR);
         int mesHoy = fechaHoy.get(Calendar.MONTH);
         int diaHoy = fechaHoy.get(Calendar.DAY_OF_MONTH);
         
@@ -131,7 +131,10 @@ public class Empleado
         if (mesHoy < mesIngreso || (mesHoy == mesIngreso && diaHoy < diaIngreso)) {
             antiguedad--;
         }
-        
+        return antiguedad; */
+        Calendar hoy = new GregorianCalendar();
+        int antiguedad = hoy.get(Calendar.YEAR) - this.fechaIngreso.get(Calendar.YEAR);
+
         return antiguedad;
     }
     /**

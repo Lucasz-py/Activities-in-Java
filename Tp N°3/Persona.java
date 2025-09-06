@@ -14,11 +14,11 @@ public class Persona
     private Calendar fechaNacimiento;
     private int anioNacimiento;
     /**
-     * Constructor de Persona
+     * ★ Constructor de objeto de clase Persona.
      * @param p_dni asigna el DNI de la persona.
      * @param p_nombre asigna el nombre de la persona.
      * @param p_apellido asigna el apellido de la persona.
-     * @param p_anio asigna el año de nacimiento de la persona.
+     * @param p_fecha asigna la fecha de nacimiento de la persona.
      */
     public Persona(int p_dni, String p_nombre, String p_apellido, Calendar p_fecha){
         this.setDNI(p_dni);
@@ -26,6 +26,13 @@ public class Persona
         this.setApellido(p_apellido);
         this.setFechaNacimiento(p_fecha);
     }
+    /**
+     * ★ Constructor de objeto de clase Persona.
+     * @param p_dni asigna el DNI de la persona.
+     * @param p_nombre asigna el nombre de la persona.
+     * @param p_apellido asigna el apellido de la persona.
+     * @param p_anio asigna el año de nacimiento de la persona.
+     */
     public Persona(int p_dni, String p_nombre, String p_apellido, int p_anio){
         this.setDNI(p_dni);
         this.setNombre(p_nombre);
@@ -33,103 +40,89 @@ public class Persona
         this.setAnioNacimiento(p_anio);
     }
     /**
-    * Método setDNI
-    * @param dni
-    * actualiza el dni con el parametro p_dni
+    * Actualiza el DNI de la persona.
+    * @param p_dni asigna el DNI.
     */
     private void setDNI(int p_dni){
         this.nroDni = p_dni;
     }
     /**
-    * Método setNombre
-    * @param p_nombre
-    * actualiza el nombre con el parametro p_nombre
+    * Actualiza el nombre de la persona.
+    * @param p_nombre asigna el nombre.
     */
     private void setNombre(String p_nombre){
         this.nombre = p_nombre;
     }
     /**
-    * Método setApellido
-    * @param p_apellido
-    * actualiza el apellido con el parametro p_apellido
+    * Actualiza el apellido.
+    * @param p_apellido asigna el apellido.
     */
     private void setApellido(String p_apellido){
         this.apellido = p_apellido;
     }
     /**
-    * Método setFechaNacimiento
-    * @param p_fecha
-    * actualiza la fecha de nacimiento a p_fecha
+    * actualiza la fecha de nacimiento.
+    * @param p_fecha asigna fecha de nacimiento.
     */
     private void setFechaNacimiento(Calendar p_fecha){
         this.fechaNacimiento = p_fecha;
     }
     /**
-    * Método setAnioNacimiento
-    * @param p_anio
-    * actualiza el año de nacimiento a p_anio
+    * Actualiza el año de nacimiento.
+    * @param p_anio asigna año de nacimiento.
     */
     private void setAnioNacimiento(int p_anio){
-        this.anioNacimiento = p_anio;
+        Calendar fecha = new GregorianCalendar(p_anio, Calendar.JANUARY, 1);
+        this.fechaNacimiento = fecha;
     }
     /**
-    * Método getDNI
-    * retorna el dni de la persona.
+    * Devuelve el número de DNI.
+    * @return nroDni
     */
     public int getDNI(){
         return this.nroDni;
     }
     /**
-    * Método getNombre
-    * retorna el nombre de la persona.
+    * Devuelve el nombre.
+    * @return nombre.
     */
     public String getNombre(){
         return this.nombre;
     }
     /**
-    * Método getApellido
-    * retorna el apellido de la persona.
+    * Devuelve el apellido.
+    * @return  apellido.
     */
     public String getApellido(){
         return this.apellido;
     }
     /**
-    * Método getFechaNacimiento
-    * retorna la fecha de nacimiento.
+    * Devuelve fecha de nacimiento
+    * @return fechaNacmiento.
     */
     public Calendar getFechaNacimiento(){
         return this.fechaNacimiento;
     }
     /**
-    * Método getAnioNacimiento
-    * retorna el año de nacimiento
+    * Devuelve el año de nacimiento.
+    * @return fechaNacimiento.
     */
     public int getAnioNacimiento(){
-        return (this.getFechaNacimiento()).get(Calendar.YEAR);
+        return this.fechaNacimiento.get(Calendar.YEAR);
     }
     /**
-    * Método edad
-    * retorna el cálculo de la edad segun su fecha de nacimiento.
+    * Calcula la edad de la persona.
+    * @return edad.
     */
     public int edad(){
         Calendar hoy = new GregorianCalendar();
-        int anioHoy = hoy.get(Calendar.YEAR);
-        int anioNac = this.getFechaNacimiento().get(Calendar.YEAR);
-        int edad = anioHoy - anioNac;
-        
-        int mesHoy = hoy.get(Calendar.MONTH);
-        int diaHoy = hoy.get(Calendar.DAY_OF_MONTH);
-        int mesNac = this.getFechaNacimiento().get(Calendar.MONTH);
-        int diaNac = this.getFechaNacimiento().get(Calendar.DAY_OF_MONTH);
-        
-        if(mesHoy < mesNac || (mesHoy == mesNac && diaHoy < diaNac)){
-            edad--;
-        }
+        int edad = hoy.get(Calendar.YEAR) - this.fechaNacimiento.get(Calendar.YEAR);
+
         return edad;
     }
     /**
-    * Método esCumpleanio
-    * retorna true si es el cumpleaños y false si no es.
+    * Verifica si es el cumpleaños.
+    * @return true si es el cumpleaños y false si no es.
     */
     public boolean esCumpleanios(){
         Calendar hoy = new GregorianCalendar();
@@ -146,22 +139,21 @@ public class Persona
         }
     }
     /**
-    * Método nomYApe
-    * retorna el nombre y apellido.
+    * Devuelve una concatenación de cadena del apellido y nombre.
+    * @return una concatenación de candena del apellido y nombre.
     */
     public String nomYApe(){
         return this.getNombre() + " " + this.getApellido();
     }
     /**
-    * Método apeYNom
-    * retorna una concatenación de cadena del apellido y nombre.
+    * Devuelve una concatenación de cadena del apellido y nombre.
+    * @return una concatenación de cadena del apellido y nombre.
     */
     public String apeYNom(){
         return this.getApellido() + " " + this.getNombre();
     }
     /**
-    * Método mostrar
-    * muestra en pantalla el nombre y apellido, el dni y la edad.
+    * Muestra en pantalla el nombre y apellido, el dni y la edad.
     */
     public void mostrar(){
         System.out.println("Nombre y Apellido: " + nomYApe());

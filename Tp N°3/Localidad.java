@@ -8,8 +8,9 @@
 public class Localidad{
     private String nombre;
     private String provincia;
+    
     /**
-     * Constructor de objeto de clase Localidad
+     * ★ Constructor de objeto de clase Localidad
      * @param p_nombre asigna nombre.
      * @param p_provincia asigna provincia.
      */

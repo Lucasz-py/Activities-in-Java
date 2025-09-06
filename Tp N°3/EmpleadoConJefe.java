@@ -15,7 +15,7 @@ public class EmpleadoConJefe{
     private EmpleadoConJefe jefe;
     
     /**
-     * Constructor de empleado.
+     * ★ Constructor de objeto de clase EmpleadoConJefe.
      * @Param p_cuil asigna el cuil del empleado.
      * @param p_apellido asigna apellido al empleado.
      * @param p_nombre asigna nombre al empleado.
@@ -32,7 +32,7 @@ public class EmpleadoConJefe{
         this.setJefe(p_jefe);
     }
     /**
-     * Constructor de empleado.
+     * ★ Constructor de objeto de clase EmpleadoConJefe.
      * @Param p_cuil asigna el cuil del empleado.
      * @param p_apellido asigna apellido al empleado.
      * @param p_nombre asigna nombre al empleado.
@@ -164,7 +164,7 @@ public class EmpleadoConJefe{
      */
     public int antiguedad(){
         Calendar fechaHoy = new GregorianCalendar();
-        int anioHoy = fechaHoy.get(Calendar.YEAR);
+        /*int anioHoy = fechaHoy.get(Calendar.YEAR);
         int mesHoy = fechaHoy.get(Calendar.MONTH);
         int diaHoy = fechaHoy.get(Calendar.DAY_OF_MONTH);
         
@@ -176,7 +176,9 @@ public class EmpleadoConJefe{
         
         if (mesHoy < mesIngreso || (mesHoy == mesIngreso && diaHoy < diaIngreso)) {
             antiguedad--;
-        }
+        } return antiguedad;*/
+        int antiguedad = fechaHoy.get(Calendar.YEAR) - this.fechaIngreso.get(Calendar.YEAR);
+        
         return antiguedad;
     }
     /**

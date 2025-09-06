@@ -12,7 +12,7 @@ public class Docente{
     private double asignacionFamiliar;
     
     /**
-     * Constructor de clase de objeto Docente.
+     * ★ Constructor de clase de objeto Docente.
      * @param p_nombre asigna nombre.
      * @param p_grado  asigna el grado.
      * @param p_sueldoBasico asigna el sueldo básico.

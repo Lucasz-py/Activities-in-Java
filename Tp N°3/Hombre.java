@@ -13,7 +13,7 @@ public class Hombre{
     private Mujer esposa;
     
     /**
-     * Constructor de objeto de clase Hombre.
+     * ★ Constructor de objeto de clase Hombre.
      * @param p_nombre asigna nombre.
      * @param p_apellido asigna apellido.
      * @param p_edad asigna edad.
@@ -25,7 +25,7 @@ public class Hombre{
         this.setEstadoCivil("Soltero");
     }
     /**
-     * Constructor de objeto de clase Hombre.
+     * ★ Constructor de objeto de clase Hombre.
      * @param p_nombre asigna nombre.
      * @param p_apellido asigna apellido.
      * @param p_edad asigna edad.

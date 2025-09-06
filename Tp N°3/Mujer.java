@@ -13,7 +13,7 @@ public class Mujer{
     private Hombre esposo;
     
     /**
-     * Constructor de objeto de clase Hombre.
+     * ★ Constructor de objeto de clase Hombre.
      * @param p_nombre asigna nombre.
      * @param p_apellido asigna apellido.
      * @param p_edad asigna edad.
@@ -26,7 +26,7 @@ public class Mujer{
     }
     
     /**
-     * Constructor de objeto de clase Hombre.
+     * ★ Constructor de objeto de clase Hombre.
      * @param p_nombre asigna nombre.
      * @param p_apellido asigna apellido.
      * @param p_edad asigna edad.

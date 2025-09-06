@@ -14,7 +14,7 @@ public class Producto{
     private int existMinima;
     private Laboratorio lab;
      /**
-     * Metodo Constructor de Producto.
+     * Constructor de objeto de clase Producto.
      * @param p_codigo asigna el codigo del producto.
      * @param p_rubro asigna el rubro del producto.
      * @param p_desc asigna la descripcion del producto.
@@ -34,7 +34,7 @@ public class Producto{
         this.setStock(0);
     }
     /**
-     * Metodo Constructor de Producto.
+     * Constructor de objeto de clase Producto.
      * @param p_codigo asigna el codigo del producto.
      * @param p_rubro asigna el rubro del producto.
      * @param p_desc asigna la descripcion del producto.

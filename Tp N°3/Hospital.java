@@ -10,7 +10,7 @@ public class Hospital{
     private String nombreDirector;
     
     /**
-     * Constructor de objeto de clase Hospital.
+     * ★ Constructor de objeto de clase Hospital.
      * @param p_nombre asigna el nombre.
      * @param p_director asigna el director.
      */

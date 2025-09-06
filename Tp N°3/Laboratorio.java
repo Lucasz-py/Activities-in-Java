@@ -12,7 +12,7 @@ public class Laboratorio{
     private int compraMinima;
     private int diaEntrega;
     /**
-     * Metodo Constructor de Laboratorio.
+     * ★ Constructor de objeto de clase Laboratorio.
      * @param p_nombre asigna el nombre al laboratorio.
      * @param p_domicilio asigna el domicilio del laboratorio.
      * @param p_telefono asigna un telefono al laboratorio.
@@ -27,7 +27,7 @@ public class Laboratorio{
         this.setDiaEntrega(p_diaEnt);
     }
     /**
-     * Metodo Constructor de Laboratorio.
+     * ★ Constructor de objeto de clase Laboratorio.
      * @param p_nombre asigna el nombre al laboratorio.
      * @param p_domicilio asigna el domicilio del laboratorio.
      * @param p_telefono asigna un telefono al laboratorio.

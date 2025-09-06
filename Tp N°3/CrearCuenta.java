@@ -8,7 +8,7 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class CrearCuanta{
+public class CrearCuenta{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
