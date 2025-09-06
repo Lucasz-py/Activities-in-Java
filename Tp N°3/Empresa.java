@@ -39,10 +39,10 @@ public class Empresa{
         
         empleado1ConJefe.mostrarPantalla();
         
-        EmpleadoConJefe jefe = new EmpleadoConJefe(2046240424, "Escobar", "Lucas", 100000, 2000);
+        EmpleadoConJefe jefe = new EmpleadoConJefe(2046289424, "Jose", "perez", 100000, 2000);
         
-        EmpleadoConJefe empleado2ConJefe = new EmpleadoConJefe(cuil, ape, nom, sueldo, fechaIngreso, jefe);
+        EmpleadoConJefe empleadoConJ = new EmpleadoConJefe(cuil, ape, nom, sueldo, fechaIngreso, jefe);
         
-        empleado2ConJefe.mostrarPantalla();        
+        empleadoConJ.mostrarPantalla();        
     }
 }

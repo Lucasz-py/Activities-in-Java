@@ -36,7 +36,7 @@ public class Hombre{
         this.setApellido(p_apellido);
         this.setEdad(p_edad);
         this.setEsposa(p_esposa);
-        this.setEstadoCivil("Soltero");
+        this.setEstadoCivil("Casado");
     }
     /**
      * Actualiza el nombre.
@@ -124,7 +124,7 @@ public class Hombre{
      */
     public void divorcio(){
         this.setEsposa(null);
-        this.setEstadoCivil("Divorciada");
+        this.setEstadoCivil("Divorciado");
     }
     /**
      * Muestra en pantalla el nombre, apellido, edad de personas casadas.

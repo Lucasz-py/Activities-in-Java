@@ -116,6 +116,13 @@ public class Persona
     */
     public int edad(){
         Calendar hoy = new GregorianCalendar();
+        /*
+        if (hoy.get(Calendar.MONTH) < this.fechaNacimiento.get(Calendar.MONTH) ||
+            (hoy.get(Calendar.MONTH) == this.fechaNacimiento.get(Calendar.MONTH) &&
+             hoy.get(Calendar.DAY_OF_MONTH) < this.fechaNacimiento.get(Calendar.DAY_OF_MONTH))) {
+            edad--;
+        }
+        */
         int edad = hoy.get(Calendar.YEAR) - this.fechaNacimiento.get(Calendar.YEAR);
 
         return edad;

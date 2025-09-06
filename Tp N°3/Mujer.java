@@ -37,7 +37,7 @@ public class Mujer{
         this.setApellido(p_apellido);
         this.setEdad(p_edad);
         this.setEsposo(p_esposo);
-        this.setEstadoCivil("Soltera");
+        this.setEstadoCivil("Casada");
     }
     /**
      * Actualiza el nombre.

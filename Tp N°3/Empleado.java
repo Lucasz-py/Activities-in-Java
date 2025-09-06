@@ -117,22 +117,14 @@ public class Empleado
      * Calcula la antiguedad del empleado.
      */
     public int antiguedad(){
-        Calendar fechaHoy = new GregorianCalendar();
-        /*int anioHoy = fechaHoy.get(Calendar.YEAR);
-        int mesHoy = fechaHoy.get(Calendar.MONTH);
-        int diaHoy = fechaHoy.get(Calendar.DAY_OF_MONTH);
-        
-        int anioIngreso = this.getFechaIngreso().get(Calendar.YEAR);
-        int mesIngreso = this.getFechaIngreso().get(Calendar.MONTH);
-        int diaIngreso = this.getFechaIngreso().get(Calendar.DAY_OF_MONTH);
-        
-        int antiguedad = anioHoy - this.getFechaIngreso().get(Calendar.YEAR);
-        
-        if (mesHoy < mesIngreso || (mesHoy == mesIngreso && diaHoy < diaIngreso)) {
+        Calendar hoy = new GregorianCalendar();
+        /* 
+        if (hoy.get(Calendar.MONTH) < this.fechaIngreso.get(Calendar.MONTH) ||
+            (hoy.get(Calendar.MONTH) == this.fechaIngreso.get(Calendar.MONTH) &&
+             hoy.get(Calendar.DAY_OF_MONTH) < this.fechaIngreso.get(Calendar.DAY_OF_MONTH))) {
             antiguedad--;
         }
-        return antiguedad; */
-        Calendar hoy = new GregorianCalendar();
+        */
         int antiguedad = hoy.get(Calendar.YEAR) - this.fechaIngreso.get(Calendar.YEAR);
 
         return antiguedad;
