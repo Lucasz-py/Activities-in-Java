@@ -12,7 +12,6 @@ public class Persona
     private String nombre;
     private String apellido;
     private Calendar fechaNacimiento;
-    private int anioNacimiento;
     /**
      * ★ Constructor de objeto de clase Persona.
      * @param p_dni asigna el DNI de la persona.

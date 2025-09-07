@@ -11,7 +11,6 @@ public class EmpleadoConJefe{
     private String nombre;
     private double sueldoBasico;
     private Calendar fechaIngreso;
-    private int anioIngreso;
     private EmpleadoConJefe jefe;
     
     /**
@@ -101,7 +100,8 @@ public class EmpleadoConJefe{
      * @param p_anio asigna año de ingreso.
      */
     private void setAnioIngreso(int p_anio){
-        this.anioIngreso = p_anio;
+        Calendar fecha = new GregorianCalendar(p_anio, Calendar.JANUARY, 1);
+        this.fechaIngreso = fecha;
     }
     /**
      * Actualiza al jefe.
@@ -150,7 +150,7 @@ public class EmpleadoConJefe{
      * @return anioIngreso.
      */
     public int getAnioIngreso(){
-        return this.anioIngreso;
+        return this.fechaIngreso.get(Calendar.YEAR);
     }
     /**
      * Devuelve el jefe.
@@ -164,19 +164,12 @@ public class EmpleadoConJefe{
      */
     public int antiguedad(){
         Calendar fechaHoy = new GregorianCalendar();
-        /*int anioHoy = fechaHoy.get(Calendar.YEAR);
-        int mesHoy = fechaHoy.get(Calendar.MONTH);
-        int diaHoy = fechaHoy.get(Calendar.DAY_OF_MONTH);
-        
-        int anioIngreso = this.getFechaIngreso().get(Calendar.YEAR);
-        int mesIngreso = this.getFechaIngreso().get(Calendar.MONTH);
-        int diaIngreso = this.getFechaIngreso().get(Calendar.DAY_OF_MONTH);
-        
-        int antiguedad = anioHoy - this.getFechaIngreso().get(Calendar.YEAR);
-        
-        if (mesHoy < mesIngreso || (mesHoy == mesIngreso && diaHoy < diaIngreso)) {
+        /* 
+        if (fechaHoy.get(Calendar.MONTH) < this.fechaIngreso.get(Calendar.MONTH) ||
+            (fechaHoy.get(Calendar.MONTH) == this.fechaIngreso.get(Calendar.MONTH) &&
+             fechaHoy.get(Calendar.DAY_OF_MONTH) < this.fechaIngreso.get(Calendar.DAY_OF_MONTH))) {
             antiguedad--;
-        } return antiguedad;*/
+        }*/
         int antiguedad = fechaHoy.get(Calendar.YEAR) - this.fechaIngreso.get(Calendar.YEAR);
         
         return antiguedad;
