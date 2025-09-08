@@ -7,3 +7,7 @@ git pull   # trae lo último del repo
 git add .
 git commit -m "Cambios"
 git push
+
+# Forzar actualizacion 
+git fetch origin
+git reset --hard orogin/main
