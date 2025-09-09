@@ -11,7 +11,7 @@ public class Empresa{
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Ingrese el Cuil: ");
-        long cuil = scanner.nextInt();
+        long cuil = scanner.nextLong();
         System.out.println("Ingrese el Apellido: ");
         String ape = scanner.next();
         System.out.println("Ingrese el Nombre: ");
