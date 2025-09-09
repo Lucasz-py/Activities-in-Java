@@ -179,18 +179,18 @@ public class EmpleadoConJefe{
      * @return la suma entre el sueldo basico por el descuento de obra social y el seguro de vida.
      */
     private double descuento(){
-        return (this.sueldoBasico * 0.02) + 1500;
+        return (this.getSueldoBasico() * 0.02) + 1500;
     }
     /**
      * Calcula el adicional dependiendo de la antiguedad del empleado en la organización.
      */
     private double adicional(){
         if(antiguedad() >= 0 && antiguedad() < 2){
-            return sueldoBasico * 0.02;
-        } if(antiguedad() >= 2 && (antiguedad() < 10)){
-            return sueldoBasico * 0.04;
+            return this.getSueldoBasico() * 0.02;
+        }else if(antiguedad() >= 2 && (antiguedad() < 10)){
+            return this.getSueldoBasico() * 0.04;
         } else {
-            return sueldoBasico * 0.06;
+            return this.getSueldoBasico() * 0.06;
         }
     }
     /**
@@ -198,7 +198,7 @@ public class EmpleadoConJefe{
      * @return la - entre el sueldo básico y el descuento + el adicional.
      */
      public double sueldoNeto(){
-        return sueldoBasico - descuento() + adicional(); 
+        return this.getSueldoBasico() - this.descuento() + this.adicional(); 
     }
     /**
      * Devuelve una cadena con el nombre y apellido.
@@ -226,7 +226,7 @@ public class EmpleadoConJefe{
     public void mostrarPantalla(){
         System.out.println("Nombre y Apellido: "+this.nomYApe());
         System.out.println("CUIL: "+this.getCuil());
-        System.out.println("Sueldo Neto: " + "$" + sueldoNeto());
+        System.out.println("Sueldo Neto: " + "$" + this.sueldoNeto());
         if(this.getJefe() == null){
             System.out.println("Responde a GERENTE GENERAL");
         } else {
