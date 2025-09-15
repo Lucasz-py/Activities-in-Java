@@ -221,6 +221,6 @@ public class Producto{
     * @return devuelve un string con el nombre, el precio de lista y el precio contado del producto.
     */    
     public String mostrarLinea(){
-        return this.getDesc() + "\t" + this.precioLista() + " " + this.precioContado() + "\n"; 
+        return this.getDesc() + "\t" + this.precioLista() + "\t" + this.precioContado() + "\n"; 
     }
 }

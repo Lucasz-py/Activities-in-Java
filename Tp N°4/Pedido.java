@@ -81,7 +81,7 @@ public class Pedido{
     
     public void mostrarPedido(){
         System.out.println("****** Detalle del pedido ******"+" Fecha:"+this.fecha.getTime());
-        System.out.println("Poducto"+"\t"+"Precio Lista"+"\t"+"Precio Contable");
+        System.out.println("Poducto \t\t Precio Lista \t\t Precio Contado");
         System.out.println("--------------------------------------------------------");
         for (Producto p : productos) {
             System.out.print(p.mostrarLinea());
