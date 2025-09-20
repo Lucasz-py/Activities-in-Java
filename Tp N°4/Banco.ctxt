@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Banco
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Banco\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=p_nombre\ p_nroSucursal\ p_empleado
-comment1.target=Banco(java.lang.String,\ int,\ Empleado)
+comment1.params=p_nombre\ p_localidad\ p_nroSucursal\ p_empleado
+comment1.target=Banco(java.lang.String,\ Localidad,\ int,\ Empleado)
 comment10.params=
 comment10.target=java.util.ArrayList\ getEmpleado()
 comment11.params=p_empleado
@@ -15,8 +15,8 @@ comment14.params=
 comment14.target=double\ sueldoAPagar()
 comment15.params=
 comment15.target=void\ mostrar()
-comment2.params=p_nombre\ p_nroSucursal\ p_empleado
-comment2.target=Banco(java.lang.String,\ int,\ java.util.ArrayList)
+comment2.params=p_nombre\ p_localidad\ p_nroSucursal\ p_empleado
+comment2.target=Banco(java.lang.String,\ Localidad,\ int,\ java.util.ArrayList)
 comment3.params=p_nombre
 comment3.target=void\ setNombre(java.lang.String)
 comment4.params=p_nro

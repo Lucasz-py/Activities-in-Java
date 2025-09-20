@@ -41,6 +41,7 @@ public class Empleado
         this.setApellido(p_apellido);
         this.setNombre(p_nombre);
         this.setSueldoBasico(p_importe);
+        this.setAnioIngreso(p_anio);
     }
     /**
      * Actualiza el cuil.
@@ -77,6 +78,21 @@ public class Empleado
      */
     private void setFechaIngreso(Calendar p_fechaIngreso){
         this.fechaIngreso = p_fechaIngreso;
+    }
+    /**
+     * Actualiza el año de Ingreso.
+     * @param p_anio asigna el año de nacimiento.
+     */
+    private void setAnioIngreso(int p_anio){
+        Calendar fecha = new GregorianCalendar(p_anio, Calendar.JANUARY, 1);
+        this.fechaIngreso = fecha;
+    }
+    /**
+     * Devuelve el año de ingreso del empleado
+     * @return AnioIngreso.
+     */
+    public int getAnioIngreso(){
+        return this.fechaIngreso.get(Calendar.YEAR);
     }
     /**
      * Devuelve el cuil del empleado

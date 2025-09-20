@@ -11,14 +11,16 @@ public class Banco{
     private Localidad localidad;
     private ArrayList<Empleado> empleado;
     
-    public Banco(String p_nombre, int p_nroSucursal, Empleado p_empleado){
+    public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, Empleado p_empleado){
         this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
         this.setNroSucursal(p_nroSucursal);
         this.setEmpleado(new ArrayList<Empleado>());
     }
     
-    public Banco(String p_nombre, int p_nroSucursal, ArrayList<Empleado> p_empleado){
+    public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList<Empleado> p_empleado){
         this.setNombre(p_nombre);
+        this.setLocalidad(p_localidad);
         this.setNroSucursal(p_nroSucursal);
         this.setEmpleado(p_empleado);
     }
@@ -35,7 +37,6 @@ public class Banco{
     private void setEmpleado(ArrayList<Empleado> p_empleado){
         this.empleado = p_empleado;
     }
-    
     public String getNombre(){
         return this.nombre;
     }
@@ -54,7 +55,11 @@ public class Banco{
     }
 
     public boolean quitarEmpleado(Empleado p_empleado) {
-        return this.empleado.remove(p_empleado);
+        if(this.getEmpleado().size() > 2){
+            return this.getEmpleado().remove(p_empleado); 
+        } else { 
+            return false;
+        }
     }
     
     public void listarSueldos(){
@@ -73,7 +78,7 @@ public class Banco{
     
     public void mostrar(){
         System.out.println("Banco: "+this.getNombre()+"\tSucursal: "+this.getNroSucursal());
-        this.getLocalidad().mostrar();
+        System.out.println(this.getLocalidad().mostrar());
         System.out.println("\n");
         this.listarSueldos();
         System.out.println("\n");
