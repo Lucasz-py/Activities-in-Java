@@ -198,7 +198,7 @@ public class Empleado
      * @return cuil, apellido, nombre y sueldo neto.
      */
     public String mostrarLinea(){
-        return this.getCuil() + "\t" + this.getApellido() + "," + this.getNombre() + "\t" + "..............." + "$ " + this.sueldoNeto();
+        return this.getCuil() + "\t" + this.getApellido() + "," + this.getNombre() + "\t" + "..............." + "$" + this.sueldoNeto();
     }
     /**
      * Evalúa si es el aniversario del empleado en la empresa.

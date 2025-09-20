@@ -99,7 +99,7 @@ public class Banco{
         System.out.println("\n");
         this.listarSueldos();
         System.out.println("\n");
-        System.out.println("Total a Pagar-----------------------------------"+this.sueldoAPagar());
+        System.out.println("Total a Pagar-----------------------------------$"+this.sueldoAPagar());
     }
     
     //Ejercicio 4
