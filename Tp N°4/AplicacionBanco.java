@@ -68,13 +68,35 @@ public class AplicacionBanco{
                 case 2:
                 miBanco.listarSueldos();
                 break;
+                
                 case 3:
                 miBanco.mostrar();
                 break;
-                case 4:
-                miBanco.quitarEmpleado(empleado);
-                break;
                 
+                case 4:
+                System.out.println("--Despedir Empleado--");
+                System.out.println("Ingrese el CUIL del empleado a despedir: ");
+                long cuilEliminar = scanner.nextLong();
+                
+                Empleado empleadoAEliminar = null;
+                for (Empleado emp : miBanco.getEmpleado()) {
+                if (emp.getCuil() == cuilEliminar) {
+                    empleadoAEliminar = emp;
+                    break;
+                    }
+                }
+                
+                if (empleadoAEliminar != null) {
+                boolean eliminado = miBanco.quitarEmpleado(empleadoAEliminar);
+                if (eliminado) {
+                    System.out.println("Empleado eliminado exitosamente.");
+                } else {
+                    System.out.println("No se puede eliminar. El banco debe tener al menos 1 empleado.");
+                }
+                } else {
+                    System.out.println("No se encontró ningún empleado con ese CUIL.");
+                }
+            break;        
             }
         }while(opcion != 0);
     }
