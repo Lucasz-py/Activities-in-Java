@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Carrera
+comment0.text=\r\n\ Clase\ ejecutable\ para\ administrar\ un\ Curso\ y\ sus\ Alumnos.\r\n\ *\ @author\ (Tu\ Nombre)\ \r\n\ @version\ (una\ version\ o\ fecha)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
