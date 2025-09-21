@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Comercio
-comment0.text=\r\n\ Representa\ un\ comercio\ que\ administra\ una\ coleccion\ de\ empleados.\r\n\ Permite\ dar\ de\ alta,\ baja,\ consultar\ y\ mostrar\ informacion\ de\ empleados.\r\n\ *\ @author\ Gabriel\ F.\r\n\ @author\ Lucas\ E.\r\n\ @version\ 01/09/2025\r\n
+comment0.text=\r\n\ Representa\ un\ comercio\ que\ administra\ una\ coleccion\ de\ empleados.\r\n\ Permite\ dar\ de\ alta,\ baja,\ consultar\ y\ mostrar\ informacion\ de\ empleados.\r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (20/08/2025)\r\n
 comment1.params=p_nombre
 comment1.target=Comercio(java.lang.String)
 comment1.text=\r\n\ Crea\ un\ comercio\ sin\ empleados\ iniciales.\r\n\r\n\ @param\ p_nombre\ nombre\ del\ comercio.\r\n

@@ -4,7 +4,7 @@ import java.util.*;
  * Class GestionComercio - Clase ejecutable con menú interactivo
  * 
  * @authors (Gabriel F. - Lucas E.)
- * @version (20'/09/2025)
+ * @version (20/09/2025)
  */
 public class GestionComercio {
     public static void main(String[] args) {

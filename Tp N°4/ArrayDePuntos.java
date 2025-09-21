@@ -2,8 +2,8 @@ import java.util.Scanner;
 /**
  * Write a description of class ArrayDePuntos here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (20/09/2025)
  */
 public class ArrayDePuntos{
     public static void main(String[]args){

@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.HashMap;
 /**
  * Clase ejecutable para administrar un Curso y sus Alumnos.
- * * @author (Tu Nombre) 
- * @version (una version o fecha)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (13/08/2025)
  */
 public class Carrera
 {

@@ -3,9 +3,8 @@ import java.util.HashMap;
 /**
  * Representa un comercio que administra una coleccion de empleados.
  * Permite dar de alta, baja, consultar y mostrar informacion de empleados.
- * * @author Gabriel F.
- * @author Lucas E.
- * @version 01/09/2025
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (20/08/2025)
  */
 public class Comercio {
     private String nombre;

@@ -4,6 +4,7 @@
  * @authors (Gabriel F. - Lucas E.)
  * @version (01/09/2025)
  */
+
 public class Punto
 {
     private double x;

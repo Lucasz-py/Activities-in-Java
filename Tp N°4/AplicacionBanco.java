@@ -2,10 +2,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.*;
 /**
- * Write a description of class AplicacionBanco here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Aplicación Banco
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (13/08/2025)
  */
 public class AplicacionBanco{
     public static void main(String[] args){

@@ -5,6 +5,7 @@
  * @authors (Gabriel F. - Lucas E.)
  * @version (13/08/2025)
  */
+
 public class Alumno{
     private int lu;
     private String nombre;

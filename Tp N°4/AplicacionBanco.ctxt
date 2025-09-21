@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=AplicacionBanco
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ AplicacionBanco\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Aplicaci\u00F3n\ Banco\r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (13/08/2025)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

@@ -2,10 +2,9 @@ import java.util.Scanner;
 import java.util.*;
 import java.util.ArrayList;
 /**
- * Write a description of class TomaPedido here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (20/09/2025)
  */
 public class TomaPedido{
     public static void main(String[] args){

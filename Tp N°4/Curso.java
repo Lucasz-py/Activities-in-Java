@@ -1,4 +1,9 @@
 import java.util.*;
+/**
+ * Clase curso
+ * @authors (Gabriel F. - Lucas E.)
+ * @version (20/09/2025)
+ */
 
 public class Curso
 {
