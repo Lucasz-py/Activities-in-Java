@@ -10,7 +10,7 @@ import java.util.HashSet;
  * @author Lucas E.
  * @version 01/09/2025
  */
-public class Banco {
+public class Banco{
     private String nombre;
     private int nroSucursal;
     private Localidad localidad;
