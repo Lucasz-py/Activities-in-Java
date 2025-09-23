@@ -3,7 +3,7 @@ import java.util.*;
  * Class Alumno
  * 
  * @authors (Gabriel F. - Lucas E.)
- * @version (13/08/2025)
+ * @version (22/08/2025)
  */
 
 public class Alumno extends Persona{

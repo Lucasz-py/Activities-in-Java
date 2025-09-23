@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Alumno
-comment0.text=\r\n\ Class\ Alumno\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (13/08/2025)\r\n
+comment0.text=\r\n\ Class\ Alumno\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (22/08/2025)\r\n
 comment1.params=p_dni\ p_lu\ p_nombre\ p_apellido\ p_fecha
 comment1.target=Alumno(int,\ int,\ java.lang.String,\ java.lang.String,\ java.util.Calendar)
 comment1.text=\r\n\ Constructor\ persona\r\n\ @param\ p_lu\ asigna\ una\ libreta\ univesitaria.\r\n\ @param\ p_nombre\ asigna\ nombre\ del\ alumno.\r\n\ @param\ p_apellido\ asigna\ apellido\ del\ alumno.\r\n

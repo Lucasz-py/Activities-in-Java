@@ -1,5 +1,4 @@
 import java.util.*;
-
 /**
  * Representa un pedido de productos realizado por un cliente en una fecha específica.
  * Incluye la gestión de los productos, el cálculo de precios y la impresión del detalle del pedido.
@@ -12,7 +11,6 @@ public class Pedido {
 
     private Calendar fecha;
     private Cliente cliente;
-    // Se elimina el generic para usar un tipo crudo (raw type)
     private ArrayList productos;
     private Laboratorio laboratorio;
 
@@ -142,7 +140,7 @@ public class Pedido {
     public double totalAlContado() {
         double total = 0;
         // Se itera sobre Object y se realiza el cast
-        for (Object obj : this.productos) {
+        for (Object obj : this.getProducto()) {
             Producto p = (Producto) obj;
             total += p.precioContado();
         }
@@ -156,8 +154,9 @@ public class Pedido {
      */
     public double totalFinanciado() {
         double total = 0;
-        // Se itera sobre Object y se realiza el cast
-        for (Object obj : this.productos) {
+        // Se itera sobre Object
+        for (Object obj : this.getProducto()) {
+            // Se fuarza al objteo Objet a se de clase Producto (cast)
             Producto p = (Producto) obj;
             total += p.precioLista();
         }
@@ -171,8 +170,7 @@ public class Pedido {
         System.out.println("****** Detalle del pedido ******" + " Fecha:" + this.fecha.getTime());
         System.out.println("Poducto \t\t Precio Lista \t\t Precio Contado");
         System.out.println("--------------------------------------------------------");
-        // Se itera sobre Object y se realiza el cast
-        for (Object obj : this.productos) {
+        for (Object obj : this.getProducto()) {
             Producto producto = (Producto) obj;
             System.out.print(producto.mostrarLinea());
         }
