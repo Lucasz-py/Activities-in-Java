@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SemiExclusivo
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SemiExclusivo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_nombreCargo\ p_sueldo\ p_anio\ p_horas\ p_horasInv
+comment1.target=SemiExclusivo(java.lang.String,\ double,\ int,\ int,\ int)
+comment2.params=p_horasEx
+comment2.target=void\ setHorasInvestigacion(int)
+comment3.params=
+comment3.target=void\ mostrarCargo()
+numComments=4
