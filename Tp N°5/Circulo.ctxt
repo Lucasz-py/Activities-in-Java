@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ Class\ Circulo.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
+comment1.params=p_radio\ p_centro
+comment1.target=Circulo(double,\ Punto)
+comment1.text=\r\n\ \u2605\ Constructor\ de\ Objeto\ de\ clase\ Circulo\r\n\ @param\ p_radio\ asigna\ el\ valor\ del\ radio.\r\n\ @param\ p_centro\ asigna\ el\ obejo\ de\ clase\ Punto.\r\n
+comment2.params=
+comment2.target=java.lang.String\ nombreFigura()
+numComments=3
