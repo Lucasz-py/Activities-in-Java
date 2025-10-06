@@ -22,6 +22,6 @@ public class Exclusivo extends Cargo{
         this.horasDeExtencion = p_horasExten;
     }
     public void mostrarCargo(){
-        
+        super.mostrarCargo();
     }
 }

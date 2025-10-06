@@ -1,4 +1,4 @@
-
+import java.time.Year;
 /**
  * Write a description of class Cargo here.
  * 
@@ -6,20 +6,20 @@
  * @version (a version number or a date)
  */
 public class Cargo{
-    private String nombre;
+    private String nombreCargo;
     private double sueldoBasico;
     private int anioIngreso;
     private int horasDeDocencia;
     
     public Cargo(String p_nombreCargo, double p_sueldo, int p_anio, int p_horasDocencia){
-        this.setNombre(p_nombreCargo);
+        this.setNombreCargo(p_nombreCargo);
         this.setSueldoBasico(p_sueldo);
         this.setAnioIngreso(p_anio);
         this.setHorasDocencia(p_horasDocencia);
     }
     
-    private void setNombre(String p_nombre){
-        this.nombre = p_nombre;
+    private void setNombreCargo(String p_nombre){
+        this.nombreCargo = p_nombre;
     }
 
     private void setSueldoBasico(double p_sueldo){
@@ -34,34 +34,39 @@ public class Cargo{
         this.horasDeDocencia = p_horasDocencia;
     }
     
-    public String getNombre(){
-        return this.nombre;
+    public String getNombreCargo(){
+        return this.nombreCargo;
     }
     
     public double getSueldoBasico(){
         return this.sueldoBasico;
     }
     
-    public int gerAnioIngreso(){
+    public int getAnioIngreso(){
         return this.anioIngreso;
     }
     
     public int getHorasDocencia(){
         return this.horasDeDocencia;
     }
+    
     public int antiguedad(){
-        return 8;
+        int anioActual = Year.now().getValue();
+        return anioActual - this.getAnioIngreso();
     }
     
-    private double adicionalXAntiguiedad(){
-        return 8;
+    private double adicionalXAntiguedad(){
+        double adicional = this.antiguedad() * 0.01;;
+        return adicional;
     }
     
-    public double sueldoDelCargo(){
-        return 9;
+    public double sueldoDelCargo(){ 
+        double sueldoC = (this.adicionalXAntiguedad() * this.getSueldoBasico()) + this.getSueldoBasico();
+        return sueldoC;
     }
     
     public void mostrarCargo(){
-        
+        System.out.println(this.getNombreCargo()+ " - Sueldo Basico: $"+this.getSueldoBasico()+" - Sueldo Cargo: $"+
+        this.sueldoDelCargo()+" - Antiguedad: "+this.antiguedad()+ " - Horas Docencia: "+ this.getHorasDocencia());
     }
 }

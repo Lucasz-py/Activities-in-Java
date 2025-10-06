@@ -16,8 +16,16 @@ public class SemiExclusivo extends Cargo{
     private void setHorasInvestigacion(int p_horasEx){
         this.horasDeInvestigacion = p_horasEx;
     }
+    
+    public int getHorasInvestigacion(){
+        return this.horasDeInvestigacion;
+    }
+    
     public void mostrarCargo(){
-        
+        super.mostrarCargo();
+        System.out.println("\n");
+        System.out.println("--- Cargo de caracter Semiexclusivo ---");
+        System.out.println("Horas de investigacion: " + this.getHorasInvestigacion());
     }
     
 }

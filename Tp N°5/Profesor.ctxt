@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Profesor
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Profesor\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_nroDni\ p_nombre\ p_apellido\ p_anio\ p_titulo\ p_cargo
+comment1.target=Profesor(int,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ java.util.ArrayList)
+comment10.params=
+comment10.target=double\ sueldoTotal()
+comment11.params=
+comment11.target=java.lang.String\ mostrarLinea()
+comment2.params=p_titulo
+comment2.target=void\ setTitulo(java.lang.String)
+comment3.params=p_cargo
+comment3.target=void\ setCargo(java.util.ArrayList)
+comment4.params=
+comment4.target=java.lang.String\ getTitulo()
+comment5.params=
+comment5.target=java.util.ArrayList\ getCargo()
+comment6.params=p_cargo
+comment6.target=boolean\ agregarCargo(Cargo)
+comment7.params=p_cargo
+comment7.target=boolean\ quitarEmpleado(Cargo)
+comment8.params=
+comment8.target=void\ mostrar()
+comment9.params=
+comment9.target=void\ listarCargos()
+numComments=12
