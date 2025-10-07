@@ -46,13 +46,13 @@ public class Facultad{
             System.out.println("DNI: "+prof.getDNI()+ " Nombre: "+prof.getNombre()+ " - Sueldo Total: "+prof.sueldoTotal());
         }
         System.out.println("------------------------------------------------------------------");
-        System.out.println("Total a Paegar: $"+this.totalAPagar());
+        System.out.println("Total a Pagar: $"+this.totalAPagar());
     }
     
     public double totalAPagar(){
         double total = 0.0;
         for(Profesor prof : this.getProfesor()){
-            total =+ prof.sueldoTotal();
+            total += prof.sueldoTotal();
         }
         return total;
     }
