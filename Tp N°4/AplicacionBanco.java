@@ -50,14 +50,17 @@ public class AplicacionBanco{
                 System.out.println("--Agregar Empleado--\n");
                 System.out.println("Cuil: ");
                 long cuil = scanner.nextLong();
+                scanner.nextLine();
                 System.out.println("Apellido: ");
-                String ape = scanner.next();
+                String ape = scanner.nextLine();
                 System.out.println("Nombre: ");
-                String nom = scanner.next();
+                String nom = scanner.nextLine();
                 System.out.println("Sueldo Basico: ");
                 double sueldoBasico = scanner.nextDouble();
+                scanner.nextLine();
                 System.out.println("Año ingreso: ");
                 int anio = scanner.nextInt();
+                scanner.nextLine();
                 
                 Empleado empleado = new Empleado(cuil, ape, nom, sueldoBasico, anio);
                 

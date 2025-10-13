@@ -31,6 +31,7 @@ public class Facultad{
      public boolean agregarProfesor(Profesor p_profesor) {
         return this.profesores.add(p_profesor);
     }
+    
      public boolean quitarEmpleado(Profesor p_profesor) {
         if(this.getProfesor().size() > 1){
             return this.getProfesor().remove(p_profesor); 
