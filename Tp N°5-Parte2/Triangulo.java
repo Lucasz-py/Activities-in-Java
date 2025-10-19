@@ -30,7 +30,7 @@ public class Triangulo extends FiguraGeometrica{
     }
     
     public String nombreFigura(){
-        return "Triangulo";
+        return "***Triangulo***";
     }
     
     public double superficie(){

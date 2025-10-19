@@ -28,7 +28,7 @@ public class Facultad{
         return this.profesores;
     }
     
-     public boolean agregarProfesor(Profesor p_profesor) {
+    public boolean agregarProfesor(Profesor p_profesor) {
         return this.profesores.add(p_profesor);
     }
     

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Hotel
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Hotel\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_nombre\ p_precioBase\ p_dias\ p_servicio\ p_tipoH
+comment1.target=Hotel(java.lang.String,\ double,\ int,\ java.util.ArrayList,\ java.lang.String)
+comment2.params=p_tipoH
+comment2.target=void\ setTipoHabitacion(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getTipoHabitacion()
+comment4.params=p_alojamiento
+comment4.target=int\ contar(java.lang.String)
+comment5.params=
+comment5.target=double\ costo()
+comment6.params=
+comment6.target=void\ liquidar()
+numComments=7

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Gerencia
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Gerencia\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=p_nombre\ p_alquilados
+comment1.target=Gerencia(java.lang.String,\ java.util.ArrayList)
+comment10.params=
+comment10.target=void\ mostrarLiquidacion()
+comment2.params=p_nombre
+comment2.target=void\ setNombre(java.lang.String)
+comment3.params=p_alquilados
+comment3.target=void\ setAlojamientosAlquilados(java.util.ArrayList)
+comment4.params=
+comment4.target=java.util.ArrayList\ getAlojamientosAlquilados()
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+comment6.params=p_alojamiento
+comment6.target=boolean\ agregarAlojamiento(Alojamiento)
+comment7.params=p_alogamiento
+comment7.target=boolean\ quitarAlojamiento(Alojamiento)
+comment8.params=tipoAlojamiento
+comment8.target=int\ contarAlojamiento(java.lang.String)
+comment9.params=
+comment9.target=void\ liquidar()
+numComments=11
