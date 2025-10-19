@@ -6,7 +6,7 @@
  * @version (18/10/2025)
  */
 public abstract class Etiqueta{
-    private double costo; // El costo base de la etiqueta (sin adicionales ni descuentos).
+    private double costo; 
     
     /**
      * Constructor de la clase Etiqueta.

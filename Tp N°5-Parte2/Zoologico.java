@@ -7,8 +7,8 @@ import java.util.*;
  * @version (19/10/2025)
  */
 public class Zoologico{
-    private String nombre; // Nombre del zoológico.
-    private ArrayList<Visitante> visitantes; // Lista de todos los visitantes registrados.
+    private String nombre;
+    private ArrayList<Visitante> visitantes; 
     
     /**
      * Constructor de la clase Zoologico.
@@ -78,7 +78,6 @@ public class Zoologico{
      */
     public void listarTipoVisitantePorFecha(Calendar p_fecha, String p_visitante){
         for(Visitante visitante : this.getVisitantes()){
-            // Se asume que el método listarPorFecha filtra por fecha y por tipo de visitante
             visitante.listarPorFecha(p_fecha, p_visitante);
         }
     }
@@ -89,7 +88,7 @@ public class Zoologico{
      */
     public void listarVisitantePorFecha(Calendar p_fecha){
         for(Visitante visitante : this.getVisitantes()){
-            // Compara solo el día del año y el año.
+
             if(visitante.getFechaVisita().get(Calendar.DAY_OF_YEAR) == p_fecha.get(Calendar.DAY_OF_YEAR) && 
                visitante.getFechaVisita().get(Calendar.YEAR) == p_fecha.get(Calendar.YEAR)){
                 visitante.mostrar();
@@ -107,7 +106,6 @@ public class Zoologico{
         double total = 0;
         for(Visitante visitante : this.getVisitantes()){
             Calendar fechaVisita = visitante.getFechaVisita();
-            // Verifica si la fecha de visita está dentro del rango [p_fechaDesde, p_fechaHasta]
             if((fechaVisita.after(p_fechaDesde) || fechaVisita.equals(p_fechaDesde)) && 
                (fechaVisita.before(p_fechaHasta) || fechaVisita.equals(p_fechaHasta))){
                 total += visitante.entrada();
@@ -124,7 +122,6 @@ public class Zoologico{
     public HashSet<Persona> listarPersonasQueVisitaronElZoo(){
         HashSet<Persona> todasLasPersonas = new HashSet<Persona>();
         for(Visitante visitante : this.getVisitantes()){
-            // Se asume que el método listarPersonas() devuelve un HashSet<Persona>
             todasLasPersonas.addAll(visitante.listarPersonas());
         }
         return todasLasPersonas;

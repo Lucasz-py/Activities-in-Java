@@ -6,7 +6,7 @@
  * @version (18/10/2025)
  */
 public class Comun extends Etiqueta {
-    private double plus; // Costo adicional fijo por diseño o concepto.
+    private double plus; 
     
     /**
      * Constructor de la clase Comun.
@@ -47,11 +47,10 @@ public class Comun extends Etiqueta {
         if (q >= 1 && q <= 10) {
             return 0.0;
         } else if (q >= 11 && q <= 50) {
-            return 0.02; // 2%
+            return 0.02; 
         } else if (q >= 51 && q <= 100) {
-            return 0.05; // 5%
+            return 0.05;
         } else if (q > 100) {
-            // 1% cada 10 unidades adicionales sobre 100
             int unidadesExtra = q - 100;
             int bloquesDeDiez = unidadesExtra / 10;
             return 0.05 + (bloquesDeDiez * 0.01);

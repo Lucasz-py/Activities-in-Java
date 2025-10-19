@@ -7,9 +7,9 @@
  * @version (19/10/2025)
  */
 public class Heladera extends ArtefactoHogar{
-    private int pies; // Tamaño de la heladera en pies cúbicos.
-    private int puertas; // Número de puertas que posee la heladera.
-    private boolean compresor; // Indica si la heladera tiene compresor (true) o no (false).
+    private int pies;
+    private int puertas; 
+    private boolean compresor; 
     
     /**
      * Constructor de la clase Heladera.

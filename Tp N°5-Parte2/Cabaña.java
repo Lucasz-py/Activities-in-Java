@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @version (19/10/2025)
  */
 public class Cabaña extends Alojamiento{
-    private int nroHabitacion; // El número de habitaciones que tiene la cabaña.
+    private int nroHabitacion; 
     
     /**
      * Constructor de Cabaña.
@@ -47,7 +47,6 @@ public class Cabaña extends Alojamiento{
      */
     public double costo(){
         int costoExtraPorHabitaciones = this.getNroHabitacion() * 30 * super.getDiasAlquiler();
-        // El costo base es (precioBase * dias) + costoExtra.
         return super.costo() + costoExtraPorHabitaciones + super.costoServicios();
     }
     

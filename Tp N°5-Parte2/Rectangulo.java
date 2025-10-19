@@ -8,8 +8,8 @@
  * @version (19/10/2025)
  */
 public class Rectangulo extends FiguraGeometrica{
-    private double ancho; // El ancho del rectángulo.
-    private double alto;  // El alto (altura) del rectángulo.
+    private double ancho; 
+    private double alto;  
     
     /**
      * ★ Constructor de objeto de clase Rectangulo.

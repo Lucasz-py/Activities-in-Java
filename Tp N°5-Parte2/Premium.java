@@ -6,7 +6,7 @@
  * @version (18/10/2025)
  */
 public class Premium extends Etiqueta {
-    private int colores; // Número de colores de impresión.
+    private int colores; 
     
     /**
      * Constructor de la clase Premium.
@@ -53,7 +53,6 @@ public class Premium extends Etiqueta {
         } else if (colores == 3) {
             porcentaje = 0.07;
         } else if (colores > 3) {
-            // 7% base para 3 colores + 4% por cada color extra sobre 3
             porcentaje = 0.07 + (colores - 3) * 0.04; 
         }
         

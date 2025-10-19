@@ -123,7 +123,7 @@ public class Jardin {
         System.out.println("Presupuesto: " + this.getNombre()+"\n");
         for (FiguraGeometrica figura : this.getFigura()) {
             System.out.println(figura.nombreFigura());
-            figura.mostrarSuperficie(); // Usa el método de FiguraGeometrica
+            figura.mostrarSuperficie(); 
         }
         
         System.out.println("----------------------------------");

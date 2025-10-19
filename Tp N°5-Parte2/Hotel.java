@@ -58,7 +58,7 @@ public class Hotel extends Alojamiento{
      * @return El costo total del alojamiento (double).
      */
     public double costo(){
-        double costoBase = super.costo(); // precioBase * dias
+        double costoBase = super.costo();
         double costoServicios = super.costoServicios();
         double costoExtraHabitacion = 0;
         

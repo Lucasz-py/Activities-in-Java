@@ -8,7 +8,7 @@ import java.util.*;
  * @version (19/10/2025)
  */
 public class Delegacion extends Visitante{
-    private ArrayList<Individuo> integrantes; // Lista de los individuos que componen la delegación.
+    private ArrayList<Individuo> integrantes; 
     
     /**
      * Constructor de la clase Delegacion.
@@ -47,7 +47,7 @@ public class Delegacion extends Visitante{
         for(Individuo ind : this.getIntegrantes()){
             // Se asume que el método getDNI() existe en la clase Persona, la cual es parte de Individuo.
             if(ind.getPersona().getDNI() == p_individuo.getPersona().getDNI()){
-                return false; // Ya está inscrito (DNI duplicado)
+                return false; 
             }
         }
         return this.getIntegrantes().add(p_individuo);

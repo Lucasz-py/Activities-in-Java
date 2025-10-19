@@ -7,7 +7,7 @@ import java.util.*;
  * @version (18/10/2025)
  */
 public class Pedido {
-    private ArrayList<Renglon> renglones; // Lista de renglones que componen el pedido.
+    private ArrayList<Renglon> renglones; 
     
     /**
      * Constructor de la clase Pedido.
@@ -68,7 +68,6 @@ public class Pedido {
         double importeTotal = 0;
         
         for (Renglon renglon : this.getRenglones()) {
-            // El renglón ya contiene la información de la cantidad y el precio total calculado.
             System.out.print("Item " + itemNum + ": " + renglon.getCantidad() + " Etiquetas de " + renglon.getItem().toString());
             
             double precio = renglon.getPrecio(); 

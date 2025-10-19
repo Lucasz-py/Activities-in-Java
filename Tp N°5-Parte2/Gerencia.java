@@ -7,9 +7,8 @@ import java.util.ArrayList;
  * @version (19/10/2025)
  */
 public class Gerencia{
-    private String nombre; // Nombre de la gerencia o administración.
-    private ArrayList<Alojamiento> alojamientosAlquilados; // Lista de alojamientos actualmente alquilados.
-    
+    private String nombre;
+    private ArrayList<Alojamiento> alojamientosAlquilados; 
     /**
      * Constructor de la clase Gerencia.
      * @param p_nombre Nombre de la gerencia.

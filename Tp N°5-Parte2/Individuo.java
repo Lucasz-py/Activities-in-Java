@@ -8,7 +8,7 @@ import java.util.*;
  * @version (19/10/2025)
  */
 public class Individuo extends Visitante{
-    private Persona persona; // La persona concreta que realiza la visita.
+    private Persona persona; 
     
     /**
      * Constructor de la clase Individuo.

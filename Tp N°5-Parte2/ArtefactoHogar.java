@@ -7,9 +7,9 @@
  * @version (19/10/2025)
  */
 public abstract class ArtefactoHogar{
-    private String marca; // Marca o fabricante del artefacto.
-    private float precio; // Precio de venta del artefacto.
-    private int stock; // Cantidad de unidades disponibles en inventario.
+    private String marca; 
+    private float precio; 
+    private int stock; 
     
     /**
      * Constructor de la clase ArtefactoHogar.

@@ -16,7 +16,6 @@ public class Circulo extends Elipse{
      * @param p_centro asigna el objeto de clase Punto que representa el centro del círculo.
      */
     public Circulo(double p_radio, Punto p_centro){
-        // Llama al constructor de Elipse con el mismo valor para Semieje Mayor y Semieje Menor (radio).
         super(p_radio, p_radio, p_centro);
     }
     

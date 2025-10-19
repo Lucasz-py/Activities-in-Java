@@ -7,9 +7,9 @@
  * @version (18/10/2025)
  */
 public class Renglon {
-    private int cantidad; // Cantidad de etiquetas pedidas en este renglón.
-    private double precio; // El precio total ya calculado para este renglón.
-    private Etiqueta item; // La etiqueta (Comun o Premium) a la que hace referencia el renglón.
+    private int cantidad; 
+    private double precio; 
+    private Etiqueta item; 
     
     /**
      * Constructor de la clase Renglon.

@@ -7,9 +7,9 @@
  * @version (19/10/2025)
  */
 public class Cocina extends ArtefactoHogar{
-    private int hornallas; // Número de quemadores o fuegos de la cocina.
-    private int calorias; // Potencia calorífica total (o equivalente) en calorías/hora.
-    private String dimensiones; // Dimensiones físicas de la cocina (ej: "60x60x90 cm").
+    private int hornallas; 
+    private int calorias; 
+    private String dimensiones; 
     
     /**
      * Constructor de la clase Cocina.

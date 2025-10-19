@@ -6,9 +6,9 @@
  * @version (19/10/2025)
  */
 public class Lavarropas extends ArtefactoHogar{
-    private int programas; // Número de programas de lavado.
-    private float kilos; // Capacidad de carga en kilos.
-    private boolean automatico; // Indica si el lavarropas es automático (true) o semiautomático (false).
+    private int programas; 
+    private float kilos; 
+    private boolean automatico; 
     
     /**
      * Constructor de la clase Lavarropas.
@@ -84,7 +84,6 @@ public class Lavarropas extends ArtefactoHogar{
     public float creditoConAdicional(int p_cuotas, float p_interes){
         float baseCuota = super.cuotaCredito(p_cuotas, p_interes);
         if(this.getAutomatico() == false){
-            // Descuento del 2% si no es automático.
             return baseCuota * 0.98f;
         } else {
             return baseCuota;
