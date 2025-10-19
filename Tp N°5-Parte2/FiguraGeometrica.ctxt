@@ -1,16 +1,22 @@
 #BlueJ class context
 comment0.target=FiguraGeometrica
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ FiguraGeometrica\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ FiguraGeometrica.\r\n\ Representa\ la\ clase\ base\ abstracta\ para\ todas\ las\ figuras\ geom\u00E9tricas.\r\n\ Define\ las\ propiedades\ y\ operaciones\ comunes,\ como\ el\ origen\ y\ la\r\n\ capacidad\ de\ calcular\ la\ superficie.\r\n\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\ \r\n\ @version\ (10/10/2025)\r\n
 comment1.params=p_origen
 comment1.target=FiguraGeometrica(Punto)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ FiguraGeometrica.\r\n\ Inicializa\ la\ figura\ con\ un\ punto\ de\ origen.\r\n\ @param\ p_origen\ El\ objeto\ Punto\ que\ define\ el\ origen\ de\ la\ figura.\r\n
 comment2.params=p_origen
 comment2.target=void\ setOrigen(Punto)
+comment2.text=\r\n\ Setter\ \u2605\ Establece\ el\ punto\ de\ origen\ de\ la\ figura.\r\n\ @param\ p_origen\ El\ nuevo\ objeto\ Punto\ para\ el\ origen.\r\n
 comment3.params=
 comment3.target=Punto\ getOrigen()
+comment3.text=\r\n\ Getter\ \u2605\ Retorna\ el\ punto\ de\ origen\ de\ la\ figura.\r\n\ @return\ El\ objeto\ Punto\ que\ representa\ el\ origen.\r\n
 comment4.params=
 comment4.target=java.lang.String\ nombreFigura()
+comment4.text=\r\n\ M\u00E9todo\ abstracto\ que\ debe\ ser\ implementado\ por\ las\ subclases\r\n\ para\ retornar\ el\ nombre\ espec\u00EDfico\ de\ la\ figura.\r\n\ @return\ El\ nombre\ de\ la\ figura\ (String).\r\n
 comment5.params=
 comment5.target=double\ superficie()
+comment5.text=\r\n\ M\u00E9todo\ abstracto\ que\ debe\ ser\ implementado\ por\ las\ subclases\r\n\ para\ calcular\ y\ retornar\ la\ superficie\ de\ la\ figura.\r\n\ @return\ La\ superficie\ de\ la\ figura\ (double).\r\n
 comment6.params=
 comment6.target=void\ mostrarSuperficie()
+comment6.text=\r\n\ Muestra\ en\ pantalla\ el\ c\u00E1lculo\ de\ la\ superficie\ de\ la\ figura.\r\n
 numComments=7

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Administracion
-comment0.text=\r\n\ Clase\ ejecutable\ Administraci\u00F3n\ para\ instanciar\ figuras\ y\ emitir\ el\ detalle\ del\ jard\u00EDn.\r\n\ *\ @author\ (su\ nombre)\ \r\n\ @version\ (fecha)\r\n
+comment0.text=\r\n\ Clase\ ejecutable\ Administraci\u00F3n\ para\ instanciar\ figuras\ y\ emitir\ el\ detalle\ del\ jard\u00EDn.\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\ \r\n\ @version\ (10/10/2025)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2

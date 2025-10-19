@@ -1,15 +1,19 @@
 #BlueJ class context
 comment0.target=Servicio
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Servicio\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ Servicio.\r\n\ Representa\ un\ servicio\ ofrecido,\ definido\ por\ su\ descripci\u00F3n\ y\ un\ precio\ asociado.\r\n\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\r\n\ @version\ (19/10/2025)\r\n
 comment1.params=p_descripcion\ p_precio
 comment1.target=Servicio(java.lang.String,\ double)
-comment1.text=\r\n\ Constructor\ de\ Servicio.\r\n\ Por\ defecto,\ un\ servicio\ se\ inicializa\ como\ NO\ activo.\r\n
+comment1.text=\r\n\ Constructor\ de\ Servicio.\r\n\ Inicializa\ un\ nuevo\ objeto\ Servicio\ con\ una\ descripci\u00F3n\ y\ un\ precio\ dados.\r\n\ @param\ p_descripcion\ La\ descripci\u00F3n\ del\ servicio\ (String).\r\n\ @param\ p_precio\ El\ precio\ del\ servicio\ (double).\r\n
 comment2.params=p_desc
 comment2.target=void\ setDescripcion(java.lang.String)
+comment2.text=\r\n\ Establece\ la\ descripci\u00F3n\ del\ servicio.\r\n\ @param\ p_desc\ La\ nueva\ descripci\u00F3n\ del\ servicio.\r\n
 comment3.params=p_precio
 comment3.target=void\ setPrecio(double)
+comment3.text=\r\n\ Establece\ el\ precio\ del\ servicio.\r\n\ @param\ p_precio\ El\ nuevo\ precio\ del\ servicio.\r\n
 comment4.params=
 comment4.target=java.lang.String\ getDescripcion()
+comment4.text=\r\n\ Devuelve\ la\ descripci\u00F3n\ del\ servicio.\r\n\ @return\ La\ descripci\u00F3n\ del\ servicio\ (String).\r\n
 comment5.params=
 comment5.target=double\ getPrecio()
+comment5.text=\r\n\ Devuelve\ el\ precio\ del\ servicio.\r\n\ @return\ El\ precio\ del\ servicio\ (double).\r\n
 numComments=6

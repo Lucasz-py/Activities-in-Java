@@ -1,9 +1,10 @@
 #BlueJ class context
 comment0.target=Circulo
-comment0.text=\r\n\ Class\ Circulo.\r\n\ \r\n\ @authors\ (Gabriel\ F.\ -\ Lucas\ E.)\r\n\ @version\ (01/09/2025)\r\n
+comment0.text=\r\n\ Class\ Circulo.\r\n\ Representa\ una\ figura\ geom\u00E9trica\ de\ tipo\ c\u00EDrculo.\ Hereda\ de\ la\ clase\ Elipse,\r\n\ estableciendo\ el\ radio\ como\ el\ valor\ de\ ambos\ semiejes\ (mayor\ y\ menor).\r\n\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\r\n\ @version\ (19/10/2025)\r\n
 comment1.params=p_radio\ p_centro
 comment1.target=Circulo(double,\ Punto)
-comment1.text=\r\n\ \u2605\ Constructor\ de\ Objeto\ de\ clase\ Circulo\r\n\ @param\ p_radio\ asigna\ el\ valor\ del\ radio.\r\n\ @param\ p_centro\ asigna\ el\ obejo\ de\ clase\ Punto.\r\n
+comment1.text=\r\n\ Constructor\ de\ objeto\ de\ clase\ Circulo.\r\n\ Inicializa\ el\ c\u00EDrculo\ llamando\ al\ constructor\ de\ la\ superclase\ (Elipse)\r\n\ y\ usando\ el\ radio\ para\ ambos\ semiejes.\r\n\ @param\ p_radio\ asigna\ el\ valor\ del\ radio.\r\n\ @param\ p_centro\ asigna\ el\ objeto\ de\ clase\ Punto\ que\ representa\ el\ centro\ del\ c\u00EDrculo.\r\n
 comment2.params=
 comment2.target=java.lang.String\ nombreFigura()
+comment2.text=\r\n\ Retorna\ el\ nombre\ espec\u00EDfico\ de\ esta\ figura.\r\n\ @return\ El\ nombre\ "****Circulo****".\r\n
 numComments=3

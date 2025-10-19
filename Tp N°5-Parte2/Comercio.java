@@ -1,9 +1,9 @@
 import java.util.Scanner;
 /**
- * Write a description of class Comercio here.
+ * Clase ejecutable Comercio.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Escobar Lucas & Fernandez Gabriel) 
+ * @version (19/10/25)
  */
 public class Comercio{
     public static void main(String[] args){

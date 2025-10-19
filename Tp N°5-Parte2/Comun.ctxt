@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Comun
+comment0.text=\r\n\ Subclase\ Comun\ de\ Etiqueta.\r\n\ Representa\ una\ etiqueta\ de\ tipo\ com\u00FAn\ con\ un\ costo\ adicional\ fijo\ por\ dise\u00F1o\r\n\ y\ descuentos\ por\ volumen\ basados\ en\ la\ cantidad\ solicitada.\r\n\ *\ @author\ (Lucas\ E.\ Gabriel\ F.)\r\n\ @version\ (18/10/2025)\r\n
+comment1.params=p_costo\ p_plus
+comment1.target=Comun(double,\ double)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Comun.\r\n\ @param\ p_costo\ Costo\ base\ de\ la\ etiqueta\ (double).\r\n\ @param\ p_plus\ Costo\ adicional\ fijo\ por\ dise\u00F1o\ (double).\r\n
+comment2.params=p_plus
+comment2.target=void\ setPlus(double)
+comment2.text=\r\n\ Establece\ el\ costo\ adicional\ (plus)\ de\ la\ etiqueta\ Com\u00FAn.\r\n\ @param\ p_plus\ Costo\ adicional\ (double).\r\n
+comment3.params=
+comment3.target=double\ getPlus()
+comment3.text=\r\n\ Obtiene\ el\ costo\ adicional\ (plus)\ de\ la\ etiqueta\ Com\u00FAn.\r\n\ @return\ El\ costo\ adicional\ (double).\r\n
+comment4.params=q
+comment4.target=double\ descuento(int)
+comment4.text=\r\n\ Calcula\ el\ porcentaje\ de\ descuento\ aplicable\ basado\ en\ la\ cantidad\ solicitada\ (q).\r\n\ -\ 1\ a\ 10\ unidades\:\ 0%\r\n\ -\ 11\ a\ 50\ unidades\:\ 2%\r\n\ -\ 51\ a\ 100\ unidades\:\ 5%\r\n\ -\ >\ 100\ unidades\:\ 5%\ +\ 1%\ por\ cada\ bloque\ de\ 10\ unidades\ adicionales\ sobre\ 100.\r\n\ @param\ q\ La\ cantidad\ de\ etiquetas\ (int).\r\n\ @return\ El\ porcentaje\ de\ descuento\ como\ un\ valor\ decimal\ (ej\:\ 0.05\ para\ 5%).\r\n
+comment5.params=q
+comment5.target=double\ precio(int)
+comment5.text=\r\n\ Calcula\ el\ precio\ total\ por\ una\ cantidad\ de\ etiquetas\ Com\u00FAn,\ \r\n\ aplicando\ el\ descuento\ por\ volumen.\r\n\ El\ costo\ unitario\ es\ Costo\ Base\ +\ Plus\ Fijo.\r\n\ @param\ q\ La\ cantidad\ de\ etiquetas\ a\ cotizar\ (int).\r\n\ @return\ El\ precio\ total\ final\ a\ pagar\ (double).\r\n
+comment6.params=
+comment6.target=java.lang.String\ tipo()
+comment6.text=\r\n\ Devuelve\ el\ tipo\ de\ etiqueta.\r\n\ @return\ El\ String\ "Com\u00FAn".\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Devuelve\ una\ representaci\u00F3n\ en\ String\ de\ la\ etiqueta\ Com\u00FAn.\r\n\ @return\ Representaci\u00F3n\ en\ String\ con\ tipo,\ costo\ base\ y\ plus\ fijo.\r\n
+numComments=8

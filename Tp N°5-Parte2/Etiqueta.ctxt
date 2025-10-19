@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Etiqueta
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Etiqueta\ here.\r\n\ La\ clase\ abstracta\ Etiqueta\ representa\ el\ concepto\ base\ de\ una\ etiqueta\ a\ imprimir,\r\n\ con\ un\ costo\ base\ y\ m\u00E9todos\ abstractos\ para\ calcular\ su\ precio\ final.\r\n\ @authors\ (Lucas\ E.\ Gabriel\ F.)\ \r\n\ @version\ (18/10/2025)\r\n
+comment1.params=p_costo
+comment1.target=Etiqueta(double)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Etiqueta.\r\n\ @param\ p_costo\ Costo\ base\ de\ la\ etiqueta\ (double).\r\n
+comment2.params=p_costo
+comment2.target=void\ setCosto(double)
+comment2.text=\r\n\ Establece\ el\ costo\ de\ la\ etiqueta.\r\n\ @param\ p_costo\ El\ nuevo\ costo\ de\ la\ etiqueta\ (double).\r\n
+comment3.params=
+comment3.target=double\ getCosto()
+comment3.text=\r\n\ Obtiene\ el\ costo\ base\ de\ la\ etiqueta.\r\n\ @return\ El\ costo\ base\ de\ la\ etiqueta\ (double).\r\n
+comment4.params=q
+comment4.target=double\ precio(int)
+comment4.text=\r\n\ M\u00E9todo\ abstracto\ para\ calcular\ el\ precio\ total\ de\ un\ pedido\ de\ etiquetas.\r\n\ La\ implementaci\u00F3n\ var\u00EDa\ en\ las\ subclases\ (Comun,\ Premium).\r\n\ @param\ q\ La\ cantidad\ de\ etiquetas\ a\ cotizar\ (int).\r\n\ @return\ El\ precio\ total\ a\ pagar\ por\ la\ cantidad\ especificada\ (double).\r\n
+comment5.params=
+comment5.target=java.lang.String\ tipo()
+comment5.text=\r\n\ M\u00E9todo\ abstracto\ protegido\ para\ obtener\ el\ tipo\ espec\u00EDfico\ de\ etiqueta.\r\n\ Usado\ internamente\ para\ el\ m\u00E9todo\ toString().\r\n\ @return\ El\ tipo\ de\ etiqueta\ como\ String.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Devuelve\ una\ representaci\u00F3n\ en\ String\ de\ la\ etiqueta,\ incluyendo\ su\ tipo.\r\n\ @return\ Representaci\u00F3n\ en\ String\ de\ la\ etiqueta.\r\n
+numComments=7

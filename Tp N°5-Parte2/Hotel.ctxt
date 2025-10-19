@@ -1,16 +1,22 @@
 #BlueJ class context
 comment0.target=Hotel
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Hotel\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ Hotel.\r\n\ Representa\ un\ tipo\ de\ Alojamiento\ Hotelero.\r\n\ Hereda\ de\ la\ clase\ Alojamiento\ e\ incluye\ la\ l\u00F3gica\ de\ costo\ extra\ por\ tipo\ de\ habitaci\u00F3n.\r\n\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\r\n\ @version\ (19/10/2025)\r\n
 comment1.params=p_nombre\ p_precioBase\ p_dias\ p_servicio\ p_tipoH
 comment1.target=Hotel(java.lang.String,\ double,\ int,\ java.util.ArrayList,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ Hotel.\r\n\ Inicializa\ un\ nuevo\ objeto\ Hotel,\ incluyendo\ el\ tipo\ de\ habitaci\u00F3n.\r\n\ @param\ p_nombre\ Nombre\ del\ alojamiento.\r\n\ @param\ p_precioBase\ Precio\ base\ por\ d\u00EDa\ del\ alojamiento.\r\n\ @param\ p_dias\ Cantidad\ de\ d\u00EDas\ de\ alquiler.\r\n\ @param\ p_servicio\ Lista\ de\ servicios\ adicionales\ contratados.\r\n\ @param\ p_tipoH\ Tipo\ de\ habitaci\u00F3n\ (e.g.,\ "Single",\ "Doble").\r\n
 comment2.params=p_tipoH
 comment2.target=void\ setTipoHabitacion(java.lang.String)
+comment2.text=\r\n\ Establece\ el\ tipo\ de\ habitaci\u00F3n.\r\n\ @param\ p_tipoH\ El\ nuevo\ tipo\ de\ habitaci\u00F3n\ (String).\r\n
 comment3.params=
 comment3.target=java.lang.String\ getTipoHabitacion()
+comment3.text=\r\n\ Devuelve\ el\ tipo\ de\ habitaci\u00F3n.\r\n\ @return\ El\ tipo\ de\ habitaci\u00F3n\ (String).\r\n
 comment4.params=p_alojamiento
 comment4.target=int\ contar(java.lang.String)
+comment4.text=\r\n\ Verifica\ si\ este\ objeto\ es\ un\ "Hotel".\r\n\ @param\ p_alojamiento\ El\ nombre\ del\ tipo\ de\ alojamiento\ a\ contar\ (debe\ ser\ "Hotel").\r\n\ @return\ 1\ si\ el\ tipo\ coincide\ con\ "Hotel"\ (ignorando\ may\u00FAsculas/min\u00FAsculas),\ 0\ en\ caso\ contrario.\r\n
 comment5.params=
 comment5.target=double\ costo()
+comment5.text=\r\n\ Calcula\ el\ costo\ total\ del\ Hotel,\ incluyendo\ el\ costo\ base,\ los\ servicios,\r\n\ y\ un\ costo\ extra\ basado\ en\ el\ tipo\ de\ habitaci\u00F3n\ (Single\:\ $20/d\u00EDa,\ Doble\:\ $30/d\u00EDa).\r\n\ @return\ El\ costo\ total\ del\ alojamiento\ (double).\r\n
 comment6.params=
 comment6.target=void\ liquidar()
+comment6.text=\r\n\ Imprime\ en\ pantalla\ el\ detalle\ de\ la\ liquidaci\u00F3n\ del\ alojamiento,\r\n\ incluyendo\ el\ tipo\ de\ habitaci\u00F3n\ y\ el\ costo\ final\ total.\r\n
 numComments=7

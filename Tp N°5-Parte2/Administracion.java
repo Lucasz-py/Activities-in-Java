@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 /**
  * Clase ejecutable Administración para instanciar figuras y emitir el detalle del jardín.
- * * @author (su nombre) 
- * @version (fecha)
+ * @author (Escobar Luacas & Fernandez Gabriel) 
+ * @version (10/10/2025)
  */
 public class Administracion {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // Se crea la lista inicial (vacía) para el Jardín
+
         ArrayList<FiguraGeometrica> figurasIniciales = new ArrayList<>();
         Jardin miJardin = new Jardin("Bichito de Luz", figurasIniciales);
         
@@ -38,8 +38,7 @@ public class Administracion {
             
             try {
                 System.out.println("Ingrese las coordenadas del punto de origen/centro (X Y):");
-                // Usar nextLine() después de next() o usar nextDouble() requiere cuidado, 
-                // se utiliza nextDouble() directamente y se manejan las excepciones.
+
                 x = scanner.nextDouble();
                 y = scanner.nextDouble();
                 Punto origen = new Punto(x, y);
@@ -82,7 +81,6 @@ public class Administracion {
                 }
                 
                 if (nuevaFigura != null) {
-                    // Utiliza el método agregarFigura() solicitado
                     if (miJardin.agregarFigura(nuevaFigura)) {
                         System.out.println(nuevaFigura.nombreFigura() + " agregado correctamente.");
                     }
@@ -90,7 +88,7 @@ public class Administracion {
                 
                 } catch (java.util.InputMismatchException e) {
                 System.out.println("Error: Asegúrese de ingresar números válidos para las dimensiones y coordenadas.");
-                scanner.nextLine(); // Limpiar el buffer de entrada para evitar un bucle infinito
+                scanner.nextLine(); 
                 } catch (Exception e) {
                 System.out.println("Ocurrió un error inesperado al procesar la figura.");
             }

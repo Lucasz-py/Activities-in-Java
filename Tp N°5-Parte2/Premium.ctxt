@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Premium
+comment0.text=\r\n\ Subclase\ Premium\ de\ Etiqueta.\r\n\ Representa\ una\ etiqueta\ de\ mayor\ calidad\ con\ un\ costo\ adicional\r\n\ basado\ en\ la\ cantidad\ de\ colores\ de\ impresi\u00F3n.\r\n\ *\ @author\ (Lucas\ E.\ Gabriel\ F.)\r\n\ @version\ (18/10/2025)\r\n
+comment1.params=p_costo\ p_colores
+comment1.target=Premium(double,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Premium.\r\n\ @param\ p_costo\ Costo\ base\ de\ la\ etiqueta\ (double).\r\n\ @param\ p_colores\ Cantidad\ de\ colores\ de\ impresi\u00F3n\ (int).\r\n
+comment2.params=p_colores
+comment2.target=void\ setColores(int)
+comment2.text=\r\n\ Establece\ la\ cantidad\ de\ colores\ de\ impresi\u00F3n.\r\n\ @param\ p_colores\ Cantidad\ de\ colores\ (int).\r\n
+comment3.params=
+comment3.target=int\ getColores()
+comment3.text=\r\n\ Obtiene\ la\ cantidad\ de\ colores\ de\ impresi\u00F3n.\r\n\ @return\ Cantidad\ de\ colores\ (int).\r\n
+comment4.params=
+comment4.target=double\ plus()
+comment4.text=\r\n\ Calcula\ el\ plus\ adicional\ por\ la\ cantidad\ de\ colores,\ como\ porcentaje\ del\ costo\ base.\r\n\ -\ 1\ color\:\ 0%\r\n\ -\ 2\ colores\:\ 5%\r\n\ -\ 3\ colores\:\ 7%\r\n\ -\ >\ 3\ colores\:\ 7%\ +\ 4%\ adicional\ por\ cada\ color\ extra\ (sobre\ 3).\r\n\ @return\ El\ monto\ del\ plus\ a\ a\u00F1adir\ al\ costo\ base\ (double).\r\n
+comment5.params=q
+comment5.target=double\ precio(int)
+comment5.text=\r\n\ Calcula\ el\ precio\ total\ por\ una\ cantidad\ de\ etiquetas\ Premium,\ \r\n\ incluyendo\ el\ costo\ base\ y\ el\ plus\ por\ colores.\r\n\ @param\ q\ La\ cantidad\ de\ etiquetas\ a\ cotizar\ (int).\r\n\ @return\ El\ precio\ total\ a\ pagar\ (double).\r\n
+comment6.params=
+comment6.target=java.lang.String\ tipo()
+comment6.text=\r\n\ Devuelve\ el\ tipo\ de\ etiqueta.\r\n\ @return\ El\ String\ "Premium".\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Devuelve\ una\ representaci\u00F3n\ en\ String\ de\ la\ etiqueta\ Premium.\r\n\ @return\ Representaci\u00F3n\ en\ String\ con\ tipo,\ costo\ y\ cantidad\ de\ colores.\r\n
+numComments=8

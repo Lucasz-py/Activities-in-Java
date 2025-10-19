@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Clase ejecutable AdministraciónGerencia.
+ * @author (Escobar Luacas & Fernandez Gabriel) 
+ * @version (10/10/2025)
+ */
 public class AdministracionGerencia {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

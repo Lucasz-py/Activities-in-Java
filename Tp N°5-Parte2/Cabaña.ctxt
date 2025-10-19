@@ -1,16 +1,22 @@
 #BlueJ class context
 comment0.target=Caba\u00F1a
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Caba\u00F1a\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ Caba\u00F1a.\r\n\ Representa\ un\ tipo\ de\ Alojamiento\ en\ formato\ de\ caba\u00F1a.\r\n\ Hereda\ de\ la\ clase\ Alojamiento\ e\ incluye\ un\ costo\ extra\ basado\ en\ el\ n\u00FAmero\ de\ habitaciones.\r\n\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\r\n\ @version\ (19/10/2025)\r\n
 comment1.params=p_nombre\ p_precioBase\ p_dias\ p_servicio\ p_nroH
 comment1.target=Caba\u00F1a(java.lang.String,\ double,\ int,\ java.util.ArrayList,\ int)
+comment1.text=\r\n\ Constructor\ de\ Caba\u00F1a.\r\n\ Inicializa\ un\ nuevo\ objeto\ Caba\u00F1a,\ incluyendo\ el\ n\u00FAmero\ de\ habitaciones.\r\n\ @param\ p_nombre\ Nombre\ del\ alojamiento.\r\n\ @param\ p_precioBase\ Precio\ base\ por\ d\u00EDa\ del\ alojamiento.\r\n\ @param\ p_dias\ Cantidad\ de\ d\u00EDas\ de\ alquiler.\r\n\ @param\ p_servicio\ Lista\ de\ servicios\ adicionales\ contratados.\r\n\ @param\ p_nroH\ N\u00FAmero\ de\ habitaciones\ de\ la\ caba\u00F1a.\r\n
 comment2.params=p_nroH
 comment2.target=void\ setNroHabitacion(int)
+comment2.text=\r\n\ Establece\ el\ n\u00FAmero\ de\ habitaciones\ de\ la\ caba\u00F1a.\r\n\ @param\ p_nroH\ El\ nuevo\ n\u00FAmero\ de\ habitaciones\ (int).\r\n
 comment3.params=
 comment3.target=int\ getNroHabitacion()
+comment3.text=\r\n\ Devuelve\ el\ n\u00FAmero\ de\ habitaciones\ de\ la\ caba\u00F1a.\r\n\ @return\ El\ n\u00FAmero\ de\ habitaciones\ (int).\r\n
 comment4.params=
 comment4.target=double\ costo()
+comment4.text=\r\n\ Calcula\ el\ costo\ total\ de\ la\ Caba\u00F1a.\r\n\ Incluye\ el\ costo\ base,\ los\ servicios,\ y\ un\ costo\ extra\ de\ $30\ por\ d\u00EDa\ por\ cada\ habitaci\u00F3n.\r\n\ @return\ El\ costo\ total\ del\ alojamiento\ (double).\r\n
 comment5.params=p_alojamiento
 comment5.target=int\ contar(java.lang.String)
+comment5.text=\r\n\ Verifica\ si\ este\ objeto\ es\ una\ "Caba\u00F1a".\r\n\ @param\ p_alojamiento\ El\ nombre\ del\ tipo\ de\ alojamiento\ a\ contar\ (debe\ ser\ "Caba\u00F1a").\r\n\ @return\ 1\ si\ el\ tipo\ coincide\ con\ "Caba\u00F1a"\ (ignorando\ may\u00FAsculas/min\u00FAsculas),\ 0\ en\ caso\ contrario.\r\n
 comment6.params=
 comment6.target=void\ liquidar()
+comment6.text=\r\n\ Imprime\ en\ pantalla\ el\ detalle\ de\ la\ liquidaci\u00F3n\ de\ la\ caba\u00F1a,\r\n\ incluyendo\ el\ n\u00FAmero\ de\ habitaciones\ y\ el\ costo\ final\ total.\r\n
 numComments=7

@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.target=Cuadrado
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cuadrado\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ Cuadrado.\r\n\ Representa\ una\ figura\ geom\u00E9trica\ de\ tipo\ cuadrado.\r\n\ Hereda\ de\ Rectangulo\ y\ asegura\ que\ el\ ancho\ y\ el\ alto\ sean\ siempre\ iguales\ al\ valor\ del\ lado.\r\n\r\n\ @author\ (Escobar\ Luacas\ &\ Fernandez\ Gabriel)\r\n\ @version\ (19/10/2025)\r\n
 comment1.params=p_punto\ p_lado
 comment1.target=Cuadrado(Punto,\ double)
+comment1.text=\r\n\ Constructor\ de\ objeto\ de\ clase\ Cuadrado.\r\n\ Llama\ al\ constructor\ de\ la\ superclase\ (Rectangulo)\ usando\ el\ mismo\ valor\ para\ ancho\ y\ alto.\r\n\ @param\ p_punto\ Objeto\ de\ clase\ Punto\ que\ representa\ el\ origen\ del\ cuadrado.\r\n\ @param\ p_lado\ El\ valor\ del\ lado\ del\ cuadrado.\r\n
 comment2.params=
 comment2.target=java.lang.String\ nombreFigura()
+comment2.text=\r\n\ Retorna\ el\ nombre\ de\ la\ figura,\ aprovechando\ la\ l\u00F3gica\ ya\ implementada\ en\ la\ superclase.\r\n\ @return\ El\ nombre\ "*****\ Cuadrado\ *****".\r\n
 comment3.params=
 comment3.target=void\ caracteristicas()
+comment3.text=\r\n\ Muestra\ las\ caracter\u00EDsticas\ del\ cuadrado\ (origen,\ lado,\ superficie\ y\ per\u00EDmetro),\r\n\ aprovechando\ la\ implementaci\u00F3n\ de\ la\ superclase\ Rectangulo.\r\n
 numComments=4
