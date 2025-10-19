@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Empresa here.
+ * clase ejecutable Empresa
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Lucas E. Gabriel F.) 
+ * @version (18/10/2025)
  */
 public class Empresa{
     public static void main(String[] args){

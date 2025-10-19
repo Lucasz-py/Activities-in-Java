@@ -1,12 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 /**
- * Write a description of class AplicacionFacultad here.
+ * Clase ejecutable para gestionar una facultad
  * 
  * @author (Gabriel F. - Lucas E.) 
  * @version ()
- *
- * Clase ejecutable para gestionar una facultad
  */
 public class AplicacionFacultad {
     private static Facultad facultad;

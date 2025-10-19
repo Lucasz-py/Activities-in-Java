@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Escuela here.
+ * Clase ejecutable Escuela
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Lucas E. Gabriel F.) 
+ * @version (28/09/2025)
  */
 public class Escuela{
     public static void main(String[] args){

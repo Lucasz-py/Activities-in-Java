@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class EjecutableElipse here.
+ * Clase ejecutable para Elipse
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Lucas E. Gabriel F.) 
+ * @version (18/10/2025)
  */
 public class EjecutableElipse{
     public static void main(String[] args) {

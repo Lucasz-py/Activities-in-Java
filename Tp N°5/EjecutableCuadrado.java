@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class EjecutableCuadrado here.
+ * Clase ejecutable de Cuadrado.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @authors (Lucas E. Gabriel F.) 
+ * @version (02/10/2025)
  */
 public class EjecutableCuadrado{
     public static void main(String[] args){

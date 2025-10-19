@@ -1,12 +1,22 @@
 #BlueJ class context
 comment0.target=Exclusivo
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Exclusivo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ Exclusivo.\r\n\ Representa\ un\ tipo\ de\ cargo\ con\ dedicaci\u00F3n\ exclusiva,\ extendiendo\ la\ informaci\u00F3n\ \r\n\ del\ Cargo\ base\ con\ la\ cantidad\ de\ horas\ dedicadas\ a\ investigaci\u00F3n\ y\ extensi\u00F3n.\ \r\n\ Hereda\ de\ la\ clase\ Cargo.\r\n\r\n\ @authors\ (Lucas\ E.\ Gabriel\ F.)\ \r\n\ @version\ (18/10/2025)\r\n
 comment1.params=p_nombreCargo\ p_sueldo\ p_anio\ p_horas\ p_horasInv\ p_horasExten
 comment1.target=Exclusivo(java.lang.String,\ double,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ para\ la\ clase\ Exclusivo.\r\n\ Llama\ al\ constructor\ de\ la\ superclase\ Cargo\ e\ inicializa\ las\ horas\ de\ investigaci\u00F3n\ y\ extensi\u00F3n.\r\n\ @param\ p_nombreCargo\ El\ nombre\ del\ cargo\ (String).\r\n\ @param\ p_sueldo\ El\ sueldo\ b\u00E1sico\ asociado\ al\ cargo\ (double).\r\n\ @param\ p_anio\ El\ a\u00F1o\ de\ ingreso\ al\ cargo\ (int).\r\n\ @param\ p_horas\ La\ cantidad\ de\ horas\ de\ docencia\ (int)\ (gestionado\ por\ la\ superclase).\r\n\ @param\ p_horasInv\ La\ cantidad\ de\ horas\ dedicadas\ a\ investigaci\u00F3n\ (int).\r\n\ @param\ p_horasExten\ La\ cantidad\ de\ horas\ dedicadas\ a\ extensi\u00F3n\ (int).\r\n
 comment2.params=p_horasEx
 comment2.target=void\ setHorasInvestigacion(int)
+comment2.text=\r\n\ Establece\ la\ cantidad\ de\ horas\ de\ investigaci\u00F3n.\r\n\ @param\ p_horasEx\ Horas\ de\ investigaci\u00F3n\ (int).\r\n
 comment3.params=p_horasExten
 comment3.target=void\ setHorasExtencion(int)
+comment3.text=\r\n\ Establece\ la\ cantidad\ de\ horas\ de\ extensi\u00F3n.\r\n\ @param\ p_horasExten\ Horas\ de\ extensi\u00F3n\ (int).\r\n
 comment4.params=
-comment4.target=void\ mostrarCargo()
-numComments=5
+comment4.target=int\ getHorasInvestigacion()
+comment4.text=\r\n\ Obtiene\ la\ cantidad\ de\ horas\ de\ investigaci\u00F3n.\r\n\ @return\ Las\ horas\ de\ investigaci\u00F3n\ (int).\r\n
+comment5.params=
+comment5.target=int\ getHorasExtencion()
+comment5.text=\r\n\ Obtiene\ la\ cantidad\ de\ horas\ de\ extensi\u00F3n.\r\n\ @return\ Las\ horas\ de\ extensi\u00F3n\ (int).\r\n
+comment6.params=
+comment6.target=void\ mostrarCargo()
+comment6.text=\r\n\ Muestra\ por\ consola\ los\ detalles\ del\ cargo.\r\n\ Sobrescribe\ el\ m\u00E9todo\ de\ la\ superclase\ Cargo\ para\ incluir\ la\ informaci\u00F3n\r\n\ de\ las\ horas\ de\ investigaci\u00F3n,\ horas\ de\ extensi\u00F3n\ y\ el\ car\u00E1cter\ exclusivo.\r\n
+numComments=7
