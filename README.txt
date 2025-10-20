@@ -10,4 +10,4 @@ git push
 
 # Forzar actualizacion 
 git fetch origin
-git reset --hard orogin/main
+git reset --hard origin/main
